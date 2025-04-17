@@ -18,6 +18,9 @@
 		"main": [
 			"net.alminoris.aestheticsurfaces.AestheticSurfaces"
 		],
+		"client": [
+			"net.alminoris.aestheticsurfaces.AestheticSurfacesClient"
+		],
 		"fabric-datagen": [
 			"net.alminoris.aestheticsurfaces.AestheticSurfacesDataGenerator"
 		]
@@ -26,7 +29,7 @@
 		"aestheticsurfaces.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.16.9",
+		"fabricloader": ">=0.16.13",
 		"minecraft": "~1.21.1",
 		"java": ">=21",
 		"fabric-api": "*"
