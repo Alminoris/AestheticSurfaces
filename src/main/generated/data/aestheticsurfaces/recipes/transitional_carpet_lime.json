@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "key": {
     "#": {
       "item": "aestheticsurfaces:transitional_carpet_lime_block"
@@ -12,6 +11,5 @@
   "result": {
     "count": 4,
     "item": "aestheticsurfaces:transitional_carpet_lime"
-  },
-  "show_notification": true
+  }
 }

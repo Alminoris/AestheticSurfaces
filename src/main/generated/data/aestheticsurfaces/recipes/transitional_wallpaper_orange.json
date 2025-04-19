@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "key": {
     "#": {
       "item": "aestheticsurfaces:transitional_carpet_orange_block"
@@ -13,6 +12,5 @@
   "result": {
     "count": 4,
     "item": "aestheticsurfaces:transitional_wallpaper_orange"
-  },
-  "show_notification": true
+  }
 }

@@ -2,29 +2,28 @@ package net.alminoris.aestheticsurfaces.datagen;
 
 import net.alminoris.aestheticsurfaces.block.ModBlocks;
 import net.alminoris.aestheticsurfaces.util.helper.BlockSetsHelper;
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.Items;
-import net.minecraft.recipe.book.RecipeCategory;
-import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 import java.util.function.Consumer;
 
 public class ModRecipeProvider extends FabricRecipeProvider
 {
-    public ModRecipeProvider(FabricDataOutput output)
+    public ModRecipeProvider(FabricDataGenerator dataGenerator)
     {
-        super(output);
+        super(dataGenerator);
     }
 
     @Override
-    public void generate(Consumer<RecipeJsonProvider> recipeExporter)
+    protected void generateRecipes(Consumer<RecipeJsonProvider> recipeExporter)
     {
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("black"), 4)
+        ShapedRecipeJsonBuilder.create(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("black"), 4)
                 .pattern("##")
                 .pattern("**")
                 .input('#', Blocks.WHITE_WOOL)
@@ -33,7 +32,7 @@ public class ModRecipeProvider extends FabricRecipeProvider
                 .criterion(hasItem(Blocks.BLACK_WOOL), conditionsFromItem(Blocks.BLACK_WOOL))
                 .offerTo(recipeExporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("blue"), 4)
+        ShapedRecipeJsonBuilder.create(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("blue"), 4)
                 .pattern("##")
                 .pattern("**")
                 .input('#', Blocks.LIME_WOOL)
@@ -42,7 +41,7 @@ public class ModRecipeProvider extends FabricRecipeProvider
                 .criterion(hasItem(Blocks.BLUE_WOOL), conditionsFromItem(Blocks.BLUE_WOOL))
                 .offerTo(recipeExporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("brown"), 4)
+        ShapedRecipeJsonBuilder.create(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("brown"), 4)
                 .pattern("##")
                 .pattern("**")
                 .input('#', Blocks.BLACK_WOOL)
@@ -51,7 +50,7 @@ public class ModRecipeProvider extends FabricRecipeProvider
                 .criterion(hasItem(Blocks.BROWN_WOOL), conditionsFromItem(Blocks.BROWN_WOOL))
                 .offerTo(recipeExporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("cyan"), 4)
+        ShapedRecipeJsonBuilder.create(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("cyan"), 4)
                 .pattern("##")
                 .pattern("**")
                 .input('#', Blocks.PURPLE_WOOL)
@@ -60,7 +59,7 @@ public class ModRecipeProvider extends FabricRecipeProvider
                 .criterion(hasItem(Blocks.CYAN_WOOL), conditionsFromItem(Blocks.CYAN_WOOL))
                 .offerTo(recipeExporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("gray"), 4)
+        ShapedRecipeJsonBuilder.create(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("gray"), 4)
                 .pattern("##")
                 .pattern("**")
                 .input('#', Blocks.GREEN_WOOL)
@@ -69,7 +68,7 @@ public class ModRecipeProvider extends FabricRecipeProvider
                 .criterion(hasItem(Blocks.GRAY_WOOL), conditionsFromItem(Blocks.GRAY_WOOL))
                 .offerTo(recipeExporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("green"), 4)
+        ShapedRecipeJsonBuilder.create(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("green"), 4)
                 .pattern("##")
                 .pattern("**")
                 .input('#', Blocks.BROWN_WOOL)
@@ -78,7 +77,7 @@ public class ModRecipeProvider extends FabricRecipeProvider
                 .criterion(hasItem(Blocks.GREEN_WOOL), conditionsFromItem(Blocks.GREEN_WOOL))
                 .offerTo(recipeExporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("light_blue"), 4)
+        ShapedRecipeJsonBuilder.create(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("light_blue"), 4)
                 .pattern("##")
                 .pattern("**")
                 .input('#', Blocks.CYAN_WOOL)
@@ -87,7 +86,7 @@ public class ModRecipeProvider extends FabricRecipeProvider
                 .criterion(hasItem(Blocks.LIGHT_BLUE_WOOL), conditionsFromItem(Blocks.LIGHT_BLUE_WOOL))
                 .offerTo(recipeExporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("light_gray"), 4)
+        ShapedRecipeJsonBuilder.create(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("light_gray"), 4)
                 .pattern("##")
                 .pattern("**")
                 .input('#', Blocks.GRAY_WOOL)
@@ -96,7 +95,7 @@ public class ModRecipeProvider extends FabricRecipeProvider
                 .criterion(hasItem(Blocks.LIGHT_GRAY_WOOL), conditionsFromItem(Blocks.LIGHT_GRAY_WOOL))
                 .offerTo(recipeExporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("lime"), 4)
+        ShapedRecipeJsonBuilder.create(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("lime"), 4)
                 .pattern("##")
                 .pattern("**")
                 .input('#', Blocks.LIGHT_BLUE_WOOL)
@@ -105,7 +104,7 @@ public class ModRecipeProvider extends FabricRecipeProvider
                 .criterion(hasItem(Blocks.LIME_WOOL), conditionsFromItem(Blocks.LIME_WOOL))
                 .offerTo(recipeExporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("magenta"), 4)
+        ShapedRecipeJsonBuilder.create(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("magenta"), 4)
                 .pattern("##")
                 .pattern("**")
                 .input('#', Blocks.RED_WOOL)
@@ -114,7 +113,7 @@ public class ModRecipeProvider extends FabricRecipeProvider
                 .criterion(hasItem(Blocks.MAGENTA_WOOL), conditionsFromItem(Blocks.MAGENTA_WOOL))
                 .offerTo(recipeExporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("orange"), 4)
+        ShapedRecipeJsonBuilder.create(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("orange"), 4)
                 .pattern("##")
                 .pattern("**")
                 .input('#', Blocks.YELLOW_WOOL)
@@ -123,7 +122,7 @@ public class ModRecipeProvider extends FabricRecipeProvider
                 .criterion(hasItem(Blocks.ORANGE_WOOL), conditionsFromItem(Blocks.ORANGE_WOOL))
                 .offerTo(recipeExporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("pink"), 4)
+        ShapedRecipeJsonBuilder.create(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("pink"), 4)
                 .pattern("##")
                 .pattern("**")
                 .input('#', Blocks.MAGENTA_WOOL)
@@ -132,7 +131,7 @@ public class ModRecipeProvider extends FabricRecipeProvider
                 .criterion(hasItem(Blocks.PINK_WOOL), conditionsFromItem(Blocks.PINK_WOOL))
                 .offerTo(recipeExporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("purple"), 4)
+        ShapedRecipeJsonBuilder.create(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("purple"), 4)
                 .pattern("##")
                 .pattern("**")
                 .input('#', Blocks.PINK_WOOL)
@@ -141,7 +140,7 @@ public class ModRecipeProvider extends FabricRecipeProvider
                 .criterion(hasItem(Blocks.PURPLE_WOOL), conditionsFromItem(Blocks.PURPLE_WOOL))
                 .offerTo(recipeExporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("red"), 4)
+        ShapedRecipeJsonBuilder.create(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("red"), 4)
                 .pattern("##")
                 .pattern("**")
                 .input('#', Blocks.ORANGE_WOOL)
@@ -150,7 +149,7 @@ public class ModRecipeProvider extends FabricRecipeProvider
                 .criterion(hasItem(Blocks.RED_WOOL), conditionsFromItem(Blocks.RED_WOOL))
                 .offerTo(recipeExporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("white"), 4)
+        ShapedRecipeJsonBuilder.create(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("white"), 4)
                 .pattern("##")
                 .pattern("**")
                 .input('#', Blocks.LIGHT_GRAY_WOOL)
@@ -159,7 +158,7 @@ public class ModRecipeProvider extends FabricRecipeProvider
                 .criterion(hasItem(Blocks.WHITE_WOOL), conditionsFromItem(Blocks.WHITE_WOOL))
                 .offerTo(recipeExporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("yellow"), 4)
+        ShapedRecipeJsonBuilder.create(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("yellow"), 4)
                 .pattern("##")
                 .pattern("**")
                 .input('#', Blocks.BLUE_WOOL)
@@ -170,70 +169,70 @@ public class ModRecipeProvider extends FabricRecipeProvider
 
         for(String name : BlockSetsHelper.COLORS)
         {
-            ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.SIMPLE_CARPETS.get(name), 4)
+            ShapedRecipeJsonBuilder.create(ModBlocks.SIMPLE_CARPETS.get(name), 4)
                     .pattern("##")
                     .input('#', ModBlocks.SIMPLE_CARPET_BLOCKS.get(name))
                     .criterion(hasItem(ModBlocks.SIMPLE_CARPET_BLOCKS.get(name)), conditionsFromItem(ModBlocks.SIMPLE_CARPET_BLOCKS.get(name)))
                     .offerTo(recipeExporter);
 
-            ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.SMOOTH_CARPETS.get(name), 4)
+            ShapedRecipeJsonBuilder.create(ModBlocks.SMOOTH_CARPETS.get(name), 4)
                     .pattern("##")
                     .input('#', ModBlocks.SMOOTH_CARPET_BLOCKS.get(name))
                     .criterion(hasItem(ModBlocks.SMOOTH_CARPET_BLOCKS.get(name)), conditionsFromItem(ModBlocks.SMOOTH_CARPET_BLOCKS.get(name)))
                     .offerTo(recipeExporter);
 
-            ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.SMOOTH_CARPET_BLOCKS.get(name), 4)
+            ShapedRecipeJsonBuilder.create(ModBlocks.SMOOTH_CARPET_BLOCKS.get(name), 4)
                     .pattern("##")
                     .pattern("##")
-                    .input('#', Registries.BLOCK.get(Identifier.of("minecraft", name+"_wool")))
-                    .criterion(hasItem(Registries.BLOCK.get(Identifier.of("minecraft", name+"_wool"))),
-                            conditionsFromItem(Registries.BLOCK.get(Identifier.of("minecraft", name+"_wool"))))
+                    .input('#', Registry.BLOCK.get(Identifier.of("minecraft", name+"_wool")))
+                    .criterion(hasItem(Registry.BLOCK.get(Identifier.of("minecraft", name+"_wool"))),
+                            conditionsFromItem(Registry.BLOCK.get(Identifier.of("minecraft", name+"_wool"))))
                     .offerTo(recipeExporter);
 
-            ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.SIMPLE_CARPET_BLOCKS.get(name), 1)
+            ShapedRecipeJsonBuilder.create(ModBlocks.SIMPLE_CARPET_BLOCKS.get(name), 1)
                     .pattern("RGB")
                     .pattern(" # ")
                     .input('R', Items.RED_DYE)
                     .input('G', Items.GREEN_DYE)
                     .input('B', Items.BLUE_DYE)
-                    .input('#', Registries.BLOCK.get(Identifier.of("minecraft", name+"_wool")))
-                    .criterion(hasItem(Registries.BLOCK.get(Identifier.of("minecraft", name+"_wool"))),
-                            conditionsFromItem(Registries.BLOCK.get(Identifier.of("minecraft", name+"_wool"))))
+                    .input('#', Registry.BLOCK.get(Identifier.of("minecraft", name+"_wool")))
+                    .criterion(hasItem(Registry.BLOCK.get(Identifier.of("minecraft", name+"_wool"))),
+                            conditionsFromItem(Registry.BLOCK.get(Identifier.of("minecraft", name+"_wool"))))
                     .offerTo(recipeExporter);
 
-            ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.TRANSITIONAL_CARPETS.get(name), 4)
+            ShapedRecipeJsonBuilder.create(ModBlocks.TRANSITIONAL_CARPETS.get(name), 4)
                     .pattern("##")
                     .input('#', ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get(name))
                     .criterion(hasItem(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get(name)), conditionsFromItem(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get(name)))
                     .offerTo(recipeExporter);
 
-            ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.SIMPLE_WALLPAPERS.get(name), 4)
+            ShapedRecipeJsonBuilder.create(ModBlocks.SIMPLE_WALLPAPERS.get(name), 4)
                     .pattern("#")
                     .pattern("#")
                     .input('#', ModBlocks.SIMPLE_CARPET_BLOCKS.get(name))
                     .criterion(hasItem(ModBlocks.SIMPLE_CARPET_BLOCKS.get(name)), conditionsFromItem(ModBlocks.SIMPLE_CARPET_BLOCKS.get(name)))
                     .offerTo(recipeExporter);
 
-            ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.SMOOTH_WALLPAPERS.get(name), 4)
+            ShapedRecipeJsonBuilder.create(ModBlocks.SMOOTH_WALLPAPERS.get(name), 4)
                     .pattern("#")
                     .pattern("#")
                     .input('#', ModBlocks.SMOOTH_CARPET_BLOCKS.get(name))
                     .criterion(hasItem(ModBlocks.SMOOTH_CARPET_BLOCKS.get(name)), conditionsFromItem(ModBlocks.SMOOTH_CARPET_BLOCKS.get(name)))
                     .offerTo(recipeExporter);
 
-            ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.TRANSITIONAL_WALLPAPERS.get(name), 4)
+            ShapedRecipeJsonBuilder.create(ModBlocks.TRANSITIONAL_WALLPAPERS.get(name), 4)
                     .pattern("#")
                     .pattern("#")
                     .input('#', ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get(name))
                     .criterion(hasItem(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get(name)), conditionsFromItem(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get(name)))
                     .offerTo(recipeExporter);
 
-            ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.WALLPAPERS.get(name), 4)
+            ShapedRecipeJsonBuilder.create(ModBlocks.WALLPAPERS.get(name), 4)
                     .pattern("#")
                     .pattern("#")
-                    .input('#', Registries.BLOCK.get(Identifier.of("minecraft", name+"_wool")))
-                    .criterion(hasItem(Registries.BLOCK.get(Identifier.of("minecraft", name+"_wool"))),
-                            conditionsFromItem(Registries.BLOCK.get(Identifier.of("minecraft", name+"_wool"))))
+                    .input('#', Registry.BLOCK.get(Identifier.of("minecraft", name+"_wool")))
+                    .criterion(hasItem(Registry.BLOCK.get(Identifier.of("minecraft", name+"_wool"))),
+                            conditionsFromItem(Registry.BLOCK.get(Identifier.of("minecraft", name+"_wool"))))
                     .offerTo(recipeExporter);
         }
     }

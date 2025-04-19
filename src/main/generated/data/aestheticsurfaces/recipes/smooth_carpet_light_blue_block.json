@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "key": {
     "#": {
       "item": "minecraft:light_blue_wool"
@@ -13,6 +12,5 @@
   "result": {
     "count": 4,
     "item": "aestheticsurfaces:smooth_carpet_light_blue_block"
-  },
-  "show_notification": true
+  }
 }

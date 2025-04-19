@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "key": {
     "#": {
       "item": "aestheticsurfaces:simple_carpet_yellow_block"
@@ -13,6 +12,5 @@
   "result": {
     "count": 4,
     "item": "aestheticsurfaces:simple_wallpaper_yellow"
-  },
-  "show_notification": true
+  }
 }

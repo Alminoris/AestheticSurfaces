@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "key": {
     "#": {
       "item": "minecraft:green_wool"
@@ -16,6 +15,5 @@
   "result": {
     "count": 4,
     "item": "aestheticsurfaces:transitional_carpet_gray_block"
-  },
-  "show_notification": true
+  }
 }
