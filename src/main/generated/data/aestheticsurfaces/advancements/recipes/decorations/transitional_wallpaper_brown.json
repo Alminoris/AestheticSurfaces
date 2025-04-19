@@ -30,6 +30,5 @@
     "recipes": [
       "aestheticsurfaces:transitional_wallpaper_brown"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

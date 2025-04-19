@@ -30,6 +30,5 @@
     "recipes": [
       "aestheticsurfaces:smooth_wallpaper_lime"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -26,9 +26,8 @@ public class ModItemGroups
                     "bauhinia", "pine", "fir", "cedar"
             };
 
-    public static final ItemGroup ASURF_TAB = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(AestheticSurfaces.MOD_ID, "asurftab"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.asurftab"))
+    public static final ItemGroup ASURF_TAB = FabricItemGroup.builder(new Identifier(AestheticSurfaces.MOD_ID, "asurftab"))
+            .displayName(Text.translatable("itemgroup.asurftab"))
                     .icon(() -> new ItemStack(Blocks.RED_CARPET)).entries((displayContext, entries) ->
                     {
                         for(String name : BlockSetsHelper.COLORS)
@@ -51,7 +50,7 @@ public class ModItemGroups
                             entries.add(ModBlocks.TRANSITIONAL_WALLPAPERS.get(name));
                         for(String name : BlockSetsHelper.COLORS)
                             entries.add(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get(name));
-                    }).build());
+                    }).build();
 
     public static void registerItemGroups()
     {

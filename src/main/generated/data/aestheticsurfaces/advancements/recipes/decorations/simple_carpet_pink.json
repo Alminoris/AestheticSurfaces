@@ -30,6 +30,5 @@
     "recipes": [
       "aestheticsurfaces:simple_carpet_pink"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

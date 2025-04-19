@@ -30,6 +30,5 @@
     "recipes": [
       "aestheticsurfaces:simple_carpet_orange"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

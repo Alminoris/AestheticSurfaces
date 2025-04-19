@@ -30,6 +30,5 @@
     "recipes": [
       "aestheticsurfaces:smooth_wallpaper_magenta"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

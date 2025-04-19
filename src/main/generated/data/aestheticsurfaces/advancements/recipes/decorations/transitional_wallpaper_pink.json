@@ -30,6 +30,5 @@
     "recipes": [
       "aestheticsurfaces:transitional_wallpaper_pink"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

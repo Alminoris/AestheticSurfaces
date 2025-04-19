@@ -30,6 +30,5 @@
     "recipes": [
       "aestheticsurfaces:simple_wallpaper_light_blue"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

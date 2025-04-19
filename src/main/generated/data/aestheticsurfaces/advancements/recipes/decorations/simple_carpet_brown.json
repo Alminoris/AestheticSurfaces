@@ -30,6 +30,5 @@
     "recipes": [
       "aestheticsurfaces:simple_carpet_brown"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

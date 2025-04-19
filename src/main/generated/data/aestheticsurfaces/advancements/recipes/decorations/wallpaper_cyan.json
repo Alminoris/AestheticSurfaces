@@ -30,6 +30,5 @@
     "recipes": [
       "aestheticsurfaces:wallpaper_cyan"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }
