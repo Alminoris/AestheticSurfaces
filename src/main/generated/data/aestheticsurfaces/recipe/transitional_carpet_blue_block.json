@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:lime_wool"
+    },
+    "*": {
+      "item": "minecraft:blue_wool"
+    }
+  },
+  "pattern": [
+    "##",
+    "**"
+  ],
+  "result": {
+    "count": 4,
+    "id": "aestheticsurfaces:transitional_carpet_blue_block"
+  }
+}

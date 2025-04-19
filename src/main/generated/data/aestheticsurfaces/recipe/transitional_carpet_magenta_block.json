@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:red_wool"
+    },
+    "*": {
+      "item": "minecraft:magenta_wool"
+    }
+  },
+  "pattern": [
+    "##",
+    "**"
+  ],
+  "result": {
+    "count": 4,
+    "id": "aestheticsurfaces:transitional_carpet_magenta_block"
+  }
+}
