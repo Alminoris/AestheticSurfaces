@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "aestheticsurfaces:smooth_carpet_gray_block"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "count": 4,
+    "item": "aestheticsurfaces:smooth_carpet_gray"
+  },
+  "show_notification": true
+}

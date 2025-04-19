@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "aestheticsurfaces:transitional_carpet_purple_block"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "count": 4,
+    "item": "aestheticsurfaces:transitional_carpet_purple"
+  },
+  "show_notification": true
+}
