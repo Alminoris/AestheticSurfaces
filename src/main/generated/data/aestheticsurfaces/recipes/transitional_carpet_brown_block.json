@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:black_wool"
+    },
+    "*": {
+      "item": "minecraft:brown_wool"
+    }
+  },
+  "pattern": [
+    "##",
+    "**"
+  ],
+  "result": {
+    "count": 4,
+    "item": "aestheticsurfaces:transitional_carpet_brown_block"
+  },
+  "show_notification": true
+}

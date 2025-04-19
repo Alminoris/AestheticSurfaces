@@ -1,5 +1,6 @@
 package net.alminoris.aestheticsurfaces;
 
+import net.alminoris.aestheticsurfaces.datagen.ModBlockTagProvider;
 import net.alminoris.aestheticsurfaces.datagen.ModLootTableProvider;
 import net.alminoris.aestheticsurfaces.datagen.ModModelProvider;
 import net.alminoris.aestheticsurfaces.datagen.ModRecipeProvider;
@@ -16,5 +17,6 @@ public class AestheticSurfacesDataGenerator implements DataGeneratorEntrypoint
 		pack.addProvider(ModRecipeProvider::new);
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModLootTableProvider::new);
+		pack.addProvider(ModBlockTagProvider::new);
 	}
 }
