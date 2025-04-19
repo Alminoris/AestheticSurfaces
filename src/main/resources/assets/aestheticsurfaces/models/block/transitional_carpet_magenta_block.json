@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "aestheticsurfaces:block/transitional_carpet_magenta"
+  }
+}

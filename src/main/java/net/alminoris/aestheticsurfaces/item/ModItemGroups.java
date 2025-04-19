@@ -32,13 +32,25 @@ public class ModItemGroups
                     .icon(() -> new ItemStack(Blocks.RED_CARPET)).entries((displayContext, entries) ->
                     {
                         for(String name : BlockSetsHelper.COLORS)
-                        {
-                            entries.add(ModBlocks.SIMPLE_CARPETS.get(name));
-                        }
+                            entries.add(ModBlocks.WALLPAPERS.get(name));
                         for(String name : BlockSetsHelper.COLORS)
-                        {
+                            entries.add(ModBlocks.SIMPLE_CARPETS.get(name));
+                        for(String name : BlockSetsHelper.COLORS)
+                            entries.add(ModBlocks.SIMPLE_WALLPAPERS.get(name));
+                        for(String name : BlockSetsHelper.COLORS)
                             entries.add(ModBlocks.SIMPLE_CARPET_BLOCKS.get(name));
-                        }
+                        for(String name : BlockSetsHelper.COLORS)
+                            entries.add(ModBlocks.SMOOTH_CARPETS.get(name));
+                        for(String name : BlockSetsHelper.COLORS)
+                            entries.add(ModBlocks.SMOOTH_WALLPAPERS.get(name));
+                        for(String name : BlockSetsHelper.COLORS)
+                            entries.add(ModBlocks.SMOOTH_CARPET_BLOCKS.get(name));
+                        for(String name : BlockSetsHelper.COLORS)
+                            entries.add(ModBlocks.TRANSITIONAL_CARPETS.get(name));
+                        for(String name : BlockSetsHelper.COLORS)
+                            entries.add(ModBlocks.TRANSITIONAL_WALLPAPERS.get(name));
+                        for(String name : BlockSetsHelper.COLORS)
+                            entries.add(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get(name));
                     }).build());
 
     public static void registerItemGroups()

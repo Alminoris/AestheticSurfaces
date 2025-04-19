@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "aestheticsurfaces:block/transitional_carpet_red" },
+    "facing=south": { "model": "aestheticsurfaces:block/transitional_carpet_red", "y": 180 },
+    "facing=west": { "model": "aestheticsurfaces:block/transitional_carpet_red", "y": 270 },
+    "facing=east": { "model": "aestheticsurfaces:block/transitional_carpet_red", "y": 90 }
+  }
+}

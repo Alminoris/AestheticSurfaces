@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "aestheticsurfaces:block/smooth_wallpaper_yellow" },
+    "facing=south": { "model": "aestheticsurfaces:block/smooth_wallpaper_yellow", "y": 180 },
+    "facing=west": { "model": "aestheticsurfaces:block/smooth_wallpaper_yellow", "y": 270 },
+    "facing=east": { "model": "aestheticsurfaces:block/smooth_wallpaper_yellow", "y": 90 }
+  }
+}

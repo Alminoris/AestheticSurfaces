@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "aestheticsurfaces:block/wallpaper_red" },
+    "facing=south": { "model": "aestheticsurfaces:block/wallpaper_red", "y": 180 },
+    "facing=west": { "model": "aestheticsurfaces:block/wallpaper_red", "y": 270 },
+    "facing=east": { "model": "aestheticsurfaces:block/wallpaper_red", "y": 90 }
+  }
+}

@@ -22,6 +22,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider
         {
             addDrop(ModBlocks.SIMPLE_CARPETS.get(name));
             addDrop(ModBlocks.SIMPLE_CARPET_BLOCKS.get(name));
+            addDrop(ModBlocks.SMOOTH_CARPETS.get(name));
+            addDrop(ModBlocks.SMOOTH_CARPET_BLOCKS.get(name));
+            addDrop(ModBlocks.TRANSITIONAL_CARPETS.get(name));
+            addDrop(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get(name));
+            addDrop(ModBlocks.SIMPLE_WALLPAPERS.get(name));
+            addDrop(ModBlocks.SMOOTH_WALLPAPERS.get(name));
+            addDrop(ModBlocks.TRANSITIONAL_WALLPAPERS.get(name));
+            addDrop(ModBlocks.WALLPAPERS.get(name));
         }
     }
 }
