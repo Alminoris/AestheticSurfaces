@@ -159,5 +159,5 @@
   "block.aestheticsurfaces.wallpaper_red": "Червоні шпалери",
   "block.aestheticsurfaces.wallpaper_white": "Білі шпалери",
   "block.aestheticsurfaces.wallpaper_yellow": "Жовті шпалери",
-  "itemgroup.asurftab": "Aesthetic Surfaces"
+  "itemGroup.aestheticsurfaces.asurftab": "Aesthetic Surfaces"
 }

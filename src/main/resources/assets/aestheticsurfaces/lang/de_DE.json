@@ -159,5 +159,5 @@
   "block.aestheticsurfaces.wallpaper_red": "Rote Tapete",
   "block.aestheticsurfaces.wallpaper_white": "Weiße Tapete",
   "block.aestheticsurfaces.wallpaper_yellow": "Gelbe Tapete",
-  "itemgroup.asurftab": "Aesthetic Surfaces"
+  "itemGroup.aestheticsurfaces.asurftab": "Aesthetic Surfaces"
 }

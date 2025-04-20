@@ -159,5 +159,5 @@
   "block.aestheticsurfaces.wallpaper_red": "Красные обои",
   "block.aestheticsurfaces.wallpaper_white": "Белые обои",
   "block.aestheticsurfaces.wallpaper_yellow": "Жёлтые обои",
-  "itemgroup.asurftab": "Эстетические поверхности"
+  "itemGroup.aestheticsurfaces.asurftab": "Эстетические поверхности"
 }
