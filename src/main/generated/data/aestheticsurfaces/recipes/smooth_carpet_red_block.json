@@ -1,16 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
   "key": {
     "#": {
       "item": "minecraft:red_wool"
     }
   },
-  "pattern": [
-    "##",
-    "##"
-  ],
   "result": {
-    "count": 4,
-    "item": "aestheticsurfaces:smooth_carpet_red_block"
+    "item": "aestheticsurfaces:smooth_carpet_red_block",
+    "count": 4
   }
 }

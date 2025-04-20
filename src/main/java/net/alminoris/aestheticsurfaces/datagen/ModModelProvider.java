@@ -36,17 +36,17 @@ public class ModModelProvider extends FabricModelProvider
     {
         ModJsonHelper.createBlockModel(ModJsonTemplates.CARPET_BLOCK_MODEL_TEMPLATE, Registry.BLOCK.getId(wool).getPath());
         ModJsonHelper.createYAxisRotatedBlockState(Registry.BLOCK.getId(wool).getPath());
-        blockStateModelGenerator.registerParentedItemModel(wool, Identifier.of(AestheticSurfaces.MOD_ID, "block/"+Registry.BLOCK.getId(wool).getPath()));
+        blockStateModelGenerator.registerParentedItemModel(wool, new Identifier(AestheticSurfaces.MOD_ID, "block/"+Registry.BLOCK.getId(wool).getPath()));
 
         ModJsonHelper.createBlockModel(ModJsonTemplates.CARPET_MODEL_TEMPLATE, Registry.BLOCK.getId(carpet).getPath());
         ModJsonHelper.createYAxisRotatedBlockState(Registry.BLOCK.getId(carpet).getPath());
-        blockStateModelGenerator.registerParentedItemModel(carpet, Identifier.of(AestheticSurfaces.MOD_ID, "block/"+Registry.BLOCK.getId(carpet).getPath()));
+        blockStateModelGenerator.registerParentedItemModel(carpet, new Identifier(AestheticSurfaces.MOD_ID, "block/"+Registry.BLOCK.getId(carpet).getPath()));
 
         if (wallpaper.length > 0)
         {
             ModJsonHelper.createBlockModel(ModJsonTemplates.WALLPAPER_MODEL_TEMPLATE, Registry.BLOCK.getId(wallpaper[0]).getPath());
             ModJsonHelper.createYAxisRotatedBlockState(Registry.BLOCK.getId(wallpaper[0]).getPath());
-            blockStateModelGenerator.registerParentedItemModel(wallpaper[0], Identifier.of(AestheticSurfaces.MOD_ID, "block/"+Registry.BLOCK.getId(wallpaper[0]).getPath()));
+            blockStateModelGenerator.registerParentedItemModel(wallpaper[0], new Identifier(AestheticSurfaces.MOD_ID, "block/"+Registry.BLOCK.getId(wallpaper[0]).getPath()));
         }
     }
 
@@ -54,7 +54,7 @@ public class ModModelProvider extends FabricModelProvider
     {
         ModJsonHelper.createWallpaperBlockModel(ModJsonTemplates.WALLPAPER_MODEL_TEMPLATE, Registry.BLOCK.getId(wallpaper).getPath(), colorName);
         ModJsonHelper.createYAxisRotatedBlockState(Registry.BLOCK.getId(wallpaper).getPath());
-        blockStateModelGenerator.registerParentedItemModel(wallpaper, Identifier.of(AestheticSurfaces.MOD_ID, "block/"+Registry.BLOCK.getId(wallpaper).getPath()));
+        blockStateModelGenerator.registerParentedItemModel(wallpaper, new Identifier(AestheticSurfaces.MOD_ID, "block/"+Registry.BLOCK.getId(wallpaper).getPath()));
     }
 
     @Override

@@ -1,15 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##"
+  ],
   "key": {
     "#": {
       "item": "aestheticsurfaces:transitional_carpet_black_block"
     }
   },
-  "pattern": [
-    "##"
-  ],
   "result": {
-    "count": 4,
-    "item": "aestheticsurfaces:transitional_carpet_black"
+    "item": "aestheticsurfaces:transitional_carpet_black",
+    "count": 4
   }
 }

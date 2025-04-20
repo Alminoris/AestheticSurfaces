@@ -1,15 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##"
+  ],
   "key": {
     "#": {
       "item": "aestheticsurfaces:simple_carpet_pink_block"
     }
   },
-  "pattern": [
-    "##"
-  ],
   "result": {
-    "count": 4,
-    "item": "aestheticsurfaces:simple_carpet_pink"
+    "item": "aestheticsurfaces:simple_carpet_pink",
+    "count": 4
   }
 }

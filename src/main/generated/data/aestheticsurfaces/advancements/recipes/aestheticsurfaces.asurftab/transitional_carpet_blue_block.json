@@ -1,19 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "aestheticsurfaces:transitional_carpet_blue_block"
+    ]
+  },
   "criteria": {
-    "has_blue_wool": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:blue_wool"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_lime_wool": {
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
@@ -22,14 +16,25 @@
             ]
           }
         ]
-      },
-      "trigger": "minecraft:inventory_changed"
+      }
+    },
+    "has_blue_wool": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:blue_wool"
+            ]
+          }
+        ]
+      }
     },
     "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
       "conditions": {
         "recipe": "aestheticsurfaces:transitional_carpet_blue_block"
-      },
-      "trigger": "minecraft:recipe_unlocked"
+      }
     }
   },
   "requirements": [
@@ -38,10 +43,5 @@
       "has_blue_wool",
       "has_the_recipe"
     ]
-  ],
-  "rewards": {
-    "recipes": [
-      "aestheticsurfaces:transitional_carpet_blue_block"
-    ]
-  }
+  ]
 }

@@ -1,15 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##"
+  ],
   "key": {
     "#": {
       "item": "aestheticsurfaces:simple_carpet_yellow_block"
     }
   },
-  "pattern": [
-    "##"
-  ],
   "result": {
-    "count": 4,
-    "item": "aestheticsurfaces:simple_carpet_yellow"
+    "item": "aestheticsurfaces:simple_carpet_yellow",
+    "count": 4
   }
 }

@@ -1,16 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
   "key": {
     "#": {
       "item": "minecraft:blue_wool"
     }
   },
-  "pattern": [
-    "#",
-    "#"
-  ],
   "result": {
-    "count": 4,
-    "item": "aestheticsurfaces:wallpaper_blue"
+    "item": "aestheticsurfaces:wallpaper_blue",
+    "count": 4
   }
 }

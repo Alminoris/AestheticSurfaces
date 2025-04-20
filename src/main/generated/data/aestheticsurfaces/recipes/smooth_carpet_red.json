@@ -1,15 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##"
+  ],
   "key": {
     "#": {
       "item": "aestheticsurfaces:smooth_carpet_red_block"
     }
   },
-  "pattern": [
-    "##"
-  ],
   "result": {
-    "count": 4,
-    "item": "aestheticsurfaces:smooth_carpet_red"
+    "item": "aestheticsurfaces:smooth_carpet_red",
+    "count": 4
   }
 }

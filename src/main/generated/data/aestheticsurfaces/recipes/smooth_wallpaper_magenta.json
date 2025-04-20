@@ -1,16 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
   "key": {
     "#": {
       "item": "aestheticsurfaces:smooth_carpet_magenta_block"
     }
   },
-  "pattern": [
-    "#",
-    "#"
-  ],
   "result": {
-    "count": 4,
-    "item": "aestheticsurfaces:smooth_wallpaper_magenta"
+    "item": "aestheticsurfaces:smooth_wallpaper_magenta",
+    "count": 4
   }
 }

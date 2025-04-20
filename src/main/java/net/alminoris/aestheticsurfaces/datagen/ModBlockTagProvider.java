@@ -24,7 +24,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider
                     .add(ModBlocks.SMOOTH_CARPET_BLOCKS.get(name))
                     .add(ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get(name));
 
-            getOrCreateTagBuilder(BlockTags.WOOL_CARPETS)
+            getOrCreateTagBuilder(BlockTags.CARPETS)
                     .add(ModBlocks.SIMPLE_CARPETS.get(name))
                     .add(ModBlocks.SMOOTH_CARPETS.get(name))
                     .add(ModBlocks.TRANSITIONAL_CARPETS.get(name));

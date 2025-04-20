@@ -1,16 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
   "key": {
     "#": {
       "item": "aestheticsurfaces:simple_carpet_white_block"
     }
   },
-  "pattern": [
-    "#",
-    "#"
-  ],
   "result": {
-    "count": 4,
-    "item": "aestheticsurfaces:simple_wallpaper_white"
+    "item": "aestheticsurfaces:simple_wallpaper_white",
+    "count": 4
   }
 }

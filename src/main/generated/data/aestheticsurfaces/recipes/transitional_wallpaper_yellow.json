@@ -1,16 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
   "key": {
     "#": {
       "item": "aestheticsurfaces:transitional_carpet_yellow_block"
     }
   },
-  "pattern": [
-    "#",
-    "#"
-  ],
   "result": {
-    "count": 4,
-    "item": "aestheticsurfaces:transitional_wallpaper_yellow"
+    "item": "aestheticsurfaces:transitional_wallpaper_yellow",
+    "count": 4
   }
 }

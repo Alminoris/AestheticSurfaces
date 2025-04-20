@@ -1,5 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "**"
+  ],
   "key": {
     "#": {
       "item": "minecraft:yellow_wool"
@@ -8,12 +12,8 @@
       "item": "minecraft:orange_wool"
     }
   },
-  "pattern": [
-    "##",
-    "**"
-  ],
   "result": {
-    "count": 4,
-    "item": "aestheticsurfaces:transitional_carpet_orange_block"
+    "item": "aestheticsurfaces:transitional_carpet_orange_block",
+    "count": 4
   }
 }

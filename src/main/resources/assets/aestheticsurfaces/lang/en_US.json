@@ -159,5 +159,5 @@
   "block.aestheticsurfaces.wallpaper_red": "Red Wallpaper",
   "block.aestheticsurfaces.wallpaper_white": "White Wallpaper",
   "block.aestheticsurfaces.wallpaper_yellow": "Yellow Wallpaper",
-  "itemgroup.asurftab": "Aesthetic Surfaces"
+  "itemGroup.aestheticsurfaces.asurftab": "Aesthetic Surfaces"
 }

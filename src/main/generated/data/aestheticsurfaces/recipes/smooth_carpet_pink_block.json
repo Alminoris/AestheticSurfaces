@@ -1,16 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
   "key": {
     "#": {
       "item": "minecraft:pink_wool"
     }
   },
-  "pattern": [
-    "##",
-    "##"
-  ],
   "result": {
-    "count": 4,
-    "item": "aestheticsurfaces:smooth_carpet_pink_block"
+    "item": "aestheticsurfaces:smooth_carpet_pink_block",
+    "count": 4
   }
 }

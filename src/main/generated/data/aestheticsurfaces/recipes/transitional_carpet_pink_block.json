@@ -1,5 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "**"
+  ],
   "key": {
     "#": {
       "item": "minecraft:magenta_wool"
@@ -8,12 +12,8 @@
       "item": "minecraft:pink_wool"
     }
   },
-  "pattern": [
-    "##",
-    "**"
-  ],
   "result": {
-    "count": 4,
-    "item": "aestheticsurfaces:transitional_carpet_pink_block"
+    "item": "aestheticsurfaces:transitional_carpet_pink_block",
+    "count": 4
   }
 }

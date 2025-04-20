@@ -1,19 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "aestheticsurfaces:transitional_carpet_cyan_block"
+    ]
+  },
   "criteria": {
-    "has_cyan_wool": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:cyan_wool"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_purple_wool": {
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
@@ -22,14 +16,25 @@
             ]
           }
         ]
-      },
-      "trigger": "minecraft:inventory_changed"
+      }
+    },
+    "has_cyan_wool": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:cyan_wool"
+            ]
+          }
+        ]
+      }
     },
     "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
       "conditions": {
         "recipe": "aestheticsurfaces:transitional_carpet_cyan_block"
-      },
-      "trigger": "minecraft:recipe_unlocked"
+      }
     }
   },
   "requirements": [
@@ -38,10 +43,5 @@
       "has_cyan_wool",
       "has_the_recipe"
     ]
-  ],
-  "rewards": {
-    "recipes": [
-      "aestheticsurfaces:transitional_carpet_cyan_block"
-    ]
-  }
+  ]
 }

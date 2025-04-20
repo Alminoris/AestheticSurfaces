@@ -1,7 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "aestheticsurfaces:transitional_carpet_pink_block"
+    ]
+  },
   "criteria": {
     "has_magenta_wool": {
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
@@ -10,10 +16,10 @@
             ]
           }
         ]
-      },
-      "trigger": "minecraft:inventory_changed"
+      }
     },
     "has_pink_wool": {
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
@@ -22,14 +28,13 @@
             ]
           }
         ]
-      },
-      "trigger": "minecraft:inventory_changed"
+      }
     },
     "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
       "conditions": {
         "recipe": "aestheticsurfaces:transitional_carpet_pink_block"
-      },
-      "trigger": "minecraft:recipe_unlocked"
+      }
     }
   },
   "requirements": [
@@ -38,10 +43,5 @@
       "has_pink_wool",
       "has_the_recipe"
     ]
-  ],
-  "rewards": {
-    "recipes": [
-      "aestheticsurfaces:transitional_carpet_pink_block"
-    ]
-  }
+  ]
 }

@@ -184,9 +184,9 @@ public class ModRecipeProvider extends FabricRecipeProvider
             ShapedRecipeJsonBuilder.create(ModBlocks.SMOOTH_CARPET_BLOCKS.get(name), 4)
                     .pattern("##")
                     .pattern("##")
-                    .input('#', Registry.BLOCK.get(Identifier.of("minecraft", name+"_wool")))
-                    .criterion(hasItem(Registry.BLOCK.get(Identifier.of("minecraft", name+"_wool"))),
-                            conditionsFromItem(Registry.BLOCK.get(Identifier.of("minecraft", name+"_wool"))))
+                    .input('#', Registry.BLOCK.get(new Identifier("minecraft", name+"_wool")))
+                    .criterion(hasItem(Registry.BLOCK.get(new Identifier("minecraft", name+"_wool"))),
+                            conditionsFromItem(Registry.BLOCK.get(new Identifier("minecraft", name+"_wool"))))
                     .offerTo(recipeExporter);
 
             ShapedRecipeJsonBuilder.create(ModBlocks.SIMPLE_CARPET_BLOCKS.get(name), 1)
@@ -195,9 +195,9 @@ public class ModRecipeProvider extends FabricRecipeProvider
                     .input('R', Items.RED_DYE)
                     .input('G', Items.GREEN_DYE)
                     .input('B', Items.BLUE_DYE)
-                    .input('#', Registry.BLOCK.get(Identifier.of("minecraft", name+"_wool")))
-                    .criterion(hasItem(Registry.BLOCK.get(Identifier.of("minecraft", name+"_wool"))),
-                            conditionsFromItem(Registry.BLOCK.get(Identifier.of("minecraft", name+"_wool"))))
+                    .input('#', Registry.BLOCK.get(new Identifier("minecraft", name+"_wool")))
+                    .criterion(hasItem(Registry.BLOCK.get(new Identifier("minecraft", name+"_wool"))),
+                            conditionsFromItem(Registry.BLOCK.get(new Identifier("minecraft", name+"_wool"))))
                     .offerTo(recipeExporter);
 
             ShapedRecipeJsonBuilder.create(ModBlocks.TRANSITIONAL_CARPETS.get(name), 4)
@@ -230,9 +230,9 @@ public class ModRecipeProvider extends FabricRecipeProvider
             ShapedRecipeJsonBuilder.create(ModBlocks.WALLPAPERS.get(name), 4)
                     .pattern("#")
                     .pattern("#")
-                    .input('#', Registry.BLOCK.get(Identifier.of("minecraft", name+"_wool")))
-                    .criterion(hasItem(Registry.BLOCK.get(Identifier.of("minecraft", name+"_wool"))),
-                            conditionsFromItem(Registry.BLOCK.get(Identifier.of("minecraft", name+"_wool"))))
+                    .input('#', Registry.BLOCK.get(new Identifier("minecraft", name+"_wool")))
+                    .criterion(hasItem(Registry.BLOCK.get(new Identifier("minecraft", name+"_wool"))),
+                            conditionsFromItem(Registry.BLOCK.get(new Identifier("minecraft", name+"_wool"))))
                     .offerTo(recipeExporter);
         }
     }

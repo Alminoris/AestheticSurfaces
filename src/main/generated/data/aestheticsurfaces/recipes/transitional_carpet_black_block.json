@@ -1,5 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "**"
+  ],
   "key": {
     "#": {
       "item": "minecraft:white_wool"
@@ -8,12 +12,8 @@
       "item": "minecraft:black_wool"
     }
   },
-  "pattern": [
-    "##",
-    "**"
-  ],
   "result": {
-    "count": 4,
-    "item": "aestheticsurfaces:transitional_carpet_black_block"
+    "item": "aestheticsurfaces:transitional_carpet_black_block",
+    "count": 4
   }
 }

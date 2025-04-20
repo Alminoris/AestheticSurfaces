@@ -1,25 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "aestheticsurfaces:transitional_carpet_orange_block"
+    ]
+  },
   "criteria": {
-    "has_orange_wool": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:orange_wool"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "aestheticsurfaces:transitional_carpet_orange_block"
-      },
-      "trigger": "minecraft:recipe_unlocked"
-    },
     "has_yellow_wool": {
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
@@ -28,8 +16,25 @@
             ]
           }
         ]
-      },
-      "trigger": "minecraft:inventory_changed"
+      }
+    },
+    "has_orange_wool": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:orange_wool"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "aestheticsurfaces:transitional_carpet_orange_block"
+      }
     }
   },
   "requirements": [
@@ -38,10 +43,5 @@
       "has_orange_wool",
       "has_the_recipe"
     ]
-  ],
-  "rewards": {
-    "recipes": [
-      "aestheticsurfaces:transitional_carpet_orange_block"
-    ]
-  }
+  ]
 }
