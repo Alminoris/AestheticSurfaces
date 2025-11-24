@@ -35,7 +35,7 @@ public class ModLanguageProviderEnUs extends FabricLanguageProvider
 
                     String pathNew = path;
 
-                    pathNew = movePrefix(movePrefix(path, BlockSetsHelper.getStones()), BlockSetsHelper.getWoods());
+                    pathNew = movePrefix(movePrefix(movePrefix(path, BlockSetsHelper.COLORS), BlockSetsHelper.getStones()), BlockSetsHelper.getWoods());
 
                     String[] parts = pathNew.split("_");
 
