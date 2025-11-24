@@ -4,8 +4,6 @@ import net.alminoris.aestheticsurfaces.AestheticSurfaces;
 import net.alminoris.aestheticsurfaces.block.ModBlocks;
 import net.alminoris.aestheticsurfaces.util.helper.BlockSetsHelper;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.fabricmc.loader.api.FabricLoader;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -15,21 +13,10 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups
 {
-    public static final String[] EXTRA_WOODS_WF =
-            {
-                    "olive", "tamarisk"
-            };
-
-    public static final String[] EXTRA_WOODS_AN =
-            {
-                    "hazelnut", "hornbeam", "hawthorn", "quince", "plum", "mango", "fig", "viburnum", "white_mulberry", "wild_cherry",
-                    "bauhinia", "pine", "fir", "cedar"
-            };
-
     public static final ItemGroup ASURF_TAB = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(AestheticSurfaces.MOD_ID, "asurftab"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.asurftab"))
-                    .icon(() -> new ItemStack(Blocks.RED_CARPET)).entries((displayContext, entries) ->
+                    .icon(() -> new ItemStack(ModBlocks.SIMPLE_WALLPAPERS.get("red"))).entries((displayContext, entries) ->
                     {
                         for(String name : BlockSetsHelper.COLORS)
                             entries.add(ModBlocks.WALLPAPERS.get(name));
