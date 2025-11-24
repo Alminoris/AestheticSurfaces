@@ -155,10 +155,10 @@ public class ModLanguageProviderUkUa extends FabricLanguageProvider
             {
                 String key = "block." + AestheticSurfaces.MOD_ID + "." + type.getKey() + mat.getKey();
                 String value = String.format(mat.getValue(), type.getValue());
-                if (type.getKey().split("_")[1].equals("carpet"))
-                {
-                    translationBuilder.add(key+"_block", value+" блок");
-                }
+                if (type.getKey().split("_").length > 1)
+                    if (type.getKey().split("_")[1].equals("carpet"))
+                        translationBuilder.add(key+"_block", value+" блок");
+
                 translationBuilder.add(key, value);
             }
         }
