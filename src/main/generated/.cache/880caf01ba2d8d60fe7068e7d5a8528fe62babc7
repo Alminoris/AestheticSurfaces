@@ -1,4 +1,4 @@
-// 1.21.1	2025-04-19T18:59:44.3525594	Aesthetic Surfaces/Block Loot Tables
+// 1.21.1	2025-11-24T15:15:53.6369658	Aesthetic Surfaces/Block Loot Tables
 8c9b6f60954c74100a56dfaa67f6217c4d1e80d7 data\aestheticsurfaces\loot_table\blocks\smooth_carpet_orange.json
 557a10db379a5e16a1d70af088f03d9fd60aa706 data\aestheticsurfaces\loot_table\blocks\transitional_carpet_lime_block.json
 04d0b1dfcc51e9b070087659577785729f38e773 data\aestheticsurfaces\loot_table\blocks\smooth_carpet_lime.json
@@ -29,8 +29,8 @@ fdfe477db566c8bcfb39b8a6c0b27069edf2deed data\aestheticsurfaces\loot_table\block
 dce294c07b3040ea2199d67b3b92e816065d0d92 data\aestheticsurfaces\loot_table\blocks\wallpaper_lime.json
 fd987b0a7369a770484a7a8992cb6ae3c5630d5c data\aestheticsurfaces\loot_table\blocks\transitional_carpet_green.json
 410fed03698bc4292452dc7c7d83bfa7548ddec5 data\aestheticsurfaces\loot_table\blocks\smooth_carpet_black.json
-400d1fa0912da166e8291717ec18d8b8136643ce data\aestheticsurfaces\loot_table\blocks\simple_wallpaper_magenta.json
 91df766179a637057c7abd645e8dfab636b0871c data\aestheticsurfaces\loot_table\blocks\simple_carpet_pink_block.json
+400d1fa0912da166e8291717ec18d8b8136643ce data\aestheticsurfaces\loot_table\blocks\simple_wallpaper_magenta.json
 1625cb58783ada2bd7fef0de74b3f609c119021a data\aestheticsurfaces\loot_table\blocks\simple_carpet_yellow.json
 758369eba1033297ed636f3ccc212420d0ad1a5f data\aestheticsurfaces\loot_table\blocks\transitional_wallpaper_yellow.json
 135014448cb6215300bf850a10b82599a5773e70 data\aestheticsurfaces\loot_table\blocks\simple_wallpaper_brown.json
