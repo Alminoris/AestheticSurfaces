@@ -1,9 +1,6 @@
 package net.alminoris.aestheticsurfaces;
 
-import net.alminoris.aestheticsurfaces.datagen.ModBlockTagProvider;
-import net.alminoris.aestheticsurfaces.datagen.ModLootTableProvider;
-import net.alminoris.aestheticsurfaces.datagen.ModModelProvider;
-import net.alminoris.aestheticsurfaces.datagen.ModRecipeProvider;
+import net.alminoris.aestheticsurfaces.datagen.*;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
@@ -18,5 +15,11 @@ public class AestheticSurfacesDataGenerator implements DataGeneratorEntrypoint
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModBlockTagProvider::new);
+		pack.addProvider(ModLanguageProviderEnUs::new);
+		pack.addProvider(ModLanguageProviderDeDe::new);
+		pack.addProvider(ModLanguageProviderEsEs::new);
+		pack.addProvider(ModLanguageProviderFrFr::new);
+		pack.addProvider(ModLanguageProviderRuRu::new);
+		pack.addProvider(ModLanguageProviderUkUa::new);
 	}
 }
