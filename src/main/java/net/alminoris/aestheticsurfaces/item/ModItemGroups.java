@@ -16,7 +16,7 @@ public class ModItemGroups
     public static final ItemGroup ASURF_TAB = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(AestheticSurfaces.MOD_ID, "asurftab"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.asurftab"))
-                    .icon(() -> new ItemStack(ModBlocks.SIMPLE_WALLPAPERS.get("red"))).entries((displayContext, entries) ->
+                    .icon(() -> new ItemStack(ModBlocks.SIMPLE_CARPETS.get("white"))).entries((displayContext, entries) ->
                     {
                         for(String name : BlockSetsHelper.COLORS)
                             entries.add(ModBlocks.WALLPAPERS.get(name));
