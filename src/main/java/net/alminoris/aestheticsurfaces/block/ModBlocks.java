@@ -19,11 +19,33 @@ import java.util.Hashtable;
 
 public class ModBlocks
 {
+    public static final Dictionary<String, Block> PARQUET_CARPETS = new Hashtable<>()
+    {{
+        for(String name : BlockSetsHelper.getWoods())
+        {
+            for (String typeName : BlockSetsHelper.PARQUET_TYPES)
+            {
+                put(name+"_"+typeName, registerBlock(typeName+"_parquet_"+name, new YAxisRotatedCarpetBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS))));
+            }
+        }
+    }};
+
+    public static final Dictionary<String, Block> PARQUET_BLOCKS = new Hashtable<>()
+    {{
+        for(String name : BlockSetsHelper.getWoods())
+        {
+            for (String typeName : BlockSetsHelper.PARQUET_TYPES)
+            {
+                put(name, registerBlock(typeName+"_parquet_"+name+"_block", new YAxisRotatedBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS))));
+            }
+        }
+    }};
+
     public static final Dictionary<String, Block> SIMPLE_CARPETS = new Hashtable<>()
     {{
         for(String name : BlockSetsHelper.COLORS)
         {
-            put(name, registerBlock("simple_carpet_"+name, new YAxisRotatedCarpetBlock(AbstractBlock.Settings.copy(Blocks.WHITE_CARPET))));
+            put(name, registerBlock("simple_carpet_"+name, new YAxisRotatedCarpetBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL))));
         }
     }};
 
@@ -31,7 +53,7 @@ public class ModBlocks
     {{
         for(String name : BlockSetsHelper.COLORS)
         {
-            put(name, registerBlock("simple_carpet_"+name+"_block", new YAxisRotatedBlock(AbstractBlock.Settings.copy(Blocks.WHITE_CARPET))));
+            put(name, registerBlock("simple_carpet_"+name+"_block", new YAxisRotatedBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL))));
         }
     }};
 
@@ -39,7 +61,7 @@ public class ModBlocks
     {{
         for(String name : BlockSetsHelper.COLORS)
         {
-            put(name, registerBlock("simple_wallpaper_"+name, new WallpaperBlock(AbstractBlock.Settings.copy(Blocks.WHITE_CARPET))));
+            put(name, registerBlock("simple_wallpaper_"+name, new WallpaperBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL))));
         }
     }};
 
@@ -47,7 +69,7 @@ public class ModBlocks
     {{
         for(String name : BlockSetsHelper.COLORS)
         {
-            put(name, registerBlock("smooth_carpet_"+name, new YAxisRotatedCarpetBlock(AbstractBlock.Settings.copy(Blocks.WHITE_CARPET))));
+            put(name, registerBlock("smooth_carpet_"+name, new YAxisRotatedCarpetBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL))));
         }
     }};
 
@@ -55,7 +77,7 @@ public class ModBlocks
     {{
         for(String name : BlockSetsHelper.COLORS)
         {
-            put(name, registerBlock("smooth_wallpaper_"+name, new WallpaperBlock(AbstractBlock.Settings.copy(Blocks.WHITE_CARPET))));
+            put(name, registerBlock("smooth_wallpaper_"+name, new WallpaperBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL))));
         }
     }};
 
@@ -63,7 +85,7 @@ public class ModBlocks
     {{
         for(String name : BlockSetsHelper.COLORS)
         {
-            put(name, registerBlock("smooth_carpet_"+name+"_block", new YAxisRotatedBlock(AbstractBlock.Settings.copy(Blocks.WHITE_CARPET))));
+            put(name, registerBlock("smooth_carpet_"+name+"_block", new YAxisRotatedBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL))));
         }
     }};
 
@@ -71,7 +93,7 @@ public class ModBlocks
     {{
         for(String name : BlockSetsHelper.COLORS)
         {
-            put(name, registerBlock("transitional_carpet_"+name, new YAxisRotatedCarpetBlock(AbstractBlock.Settings.copy(Blocks.WHITE_CARPET))));
+            put(name, registerBlock("transitional_carpet_"+name, new YAxisRotatedCarpetBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL))));
         }
     }};
 
@@ -79,7 +101,7 @@ public class ModBlocks
     {{
         for(String name : BlockSetsHelper.COLORS)
         {
-            put(name, registerBlock("transitional_carpet_"+name+"_block", new YAxisRotatedBlock(AbstractBlock.Settings.copy(Blocks.WHITE_CARPET))));
+            put(name, registerBlock("transitional_carpet_"+name+"_block", new YAxisRotatedBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL))));
         }
     }};
 
@@ -87,7 +109,7 @@ public class ModBlocks
     {{
         for(String name : BlockSetsHelper.COLORS)
         {
-            put(name, registerBlock("transitional_wallpaper_"+name, new WallpaperBlock(AbstractBlock.Settings.copy(Blocks.WHITE_CARPET))));
+            put(name, registerBlock("transitional_wallpaper_"+name, new WallpaperBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL))));
         }
     }};
 
@@ -95,7 +117,7 @@ public class ModBlocks
     {{
         for(String name : BlockSetsHelper.COLORS)
         {
-            put(name, registerBlock("wallpaper_"+name, new WallpaperBlock(AbstractBlock.Settings.copy(Blocks.WHITE_CARPET))));
+            put(name, registerBlock("wallpaper_"+name, new WallpaperBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL))));
         }
     }};
 

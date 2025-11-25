@@ -2,6 +2,11 @@ package net.alminoris.aestheticsurfaces.util.helper;
 
 public class BlockSetsHelper
 {
+    public static final String[] PARQUET_TYPES =
+            {
+                    "arenberg", "basket_weave", "cell", "french_chevron", "herringbone", "inlaid", "overlay"
+            };
+
     public static final String[] COLORS =
             {
                     "black", "brown", "gray", "light_gray",

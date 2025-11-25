@@ -2,8 +2,10 @@ package net.alminoris.aestheticsurfaces.datagen;
 
 import net.alminoris.aestheticsurfaces.block.ModBlocks;
 import net.alminoris.aestheticsurfaces.util.helper.BlockSetsHelper;
+import net.alminoris.aestheticsurfaces.util.helper.ModJsonHelper;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
@@ -25,6 +27,83 @@ public class ModRecipeProvider extends FabricRecipeProvider
     @Override
     public void generate(RecipeExporter recipeExporter)
     {
+        for(String name : BlockSetsHelper.WOODS)
+        {
+            Block block = Registries.BLOCK.get(Identifier.ofVanilla(name+"_planks"));
+
+            for (String typeName : BlockSetsHelper.PARQUET_TYPES)
+            {
+                offerStonecuttingRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PARQUET_CARPETS.get(name+"_"+typeName), block, 3);
+                offerStonecuttingRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PARQUET_BLOCKS.get(name+"_"+typeName), block, 1);
+            }
+        }
+
+        for(String name : BlockSetsHelper.EXTRA_WOODS_AN)
+        {
+            for (String typeName : BlockSetsHelper.PARQUET_TYPES)
+            {
+                ModJsonHelper.createStonecuttingRecipe("arborealnature:"+name+"_planks",
+                        Registries.BLOCK.getId(ModBlocks.PARQUET_CARPETS.get(name+"_"+typeName)).getPath(), "3");
+                ModJsonHelper.createStonecuttingRecipe("arborealnature:"+name+"_planks",
+                        Registries.BLOCK.getId(ModBlocks.PARQUET_BLOCKS.get(name+"_"+typeName)).getPath(), "1");
+            }
+        }
+
+        for(String name : BlockSetsHelper.EXTRA_WOODS_WF)
+        {
+            for (String typeName : BlockSetsHelper.PARQUET_TYPES)
+            {
+                ModJsonHelper.createStonecuttingRecipe("wildfields:"+name+"_planks",
+                        Registries.BLOCK.getId(ModBlocks.PARQUET_CARPETS.get(name+"_"+typeName)).getPath(), "3");
+                ModJsonHelper.createStonecuttingRecipe("wildfields:"+name+"_planks",
+                        Registries.BLOCK.getId(ModBlocks.PARQUET_BLOCKS.get(name+"_"+typeName)).getPath(), "1");
+            }
+        }
+
+        for(String name : BlockSetsHelper.WT_WOOD_NAMES)
+        {
+            for (String typeName : BlockSetsHelper.PARQUET_TYPES)
+            {
+                ModJsonHelper.createStonecuttingRecipe("whisperleaftrees:"+name+"_planks",
+                        Registries.BLOCK.getId(ModBlocks.PARQUET_CARPETS.get(name+"_"+typeName)).getPath(), "3");
+                ModJsonHelper.createStonecuttingRecipe("whisperleaftrees:"+name+"_planks",
+                        Registries.BLOCK.getId(ModBlocks.PARQUET_BLOCKS.get(name+"_"+typeName)).getPath(), "1");
+            }
+        }
+
+        for(String name : BlockSetsHelper.ST_WOOD_NAMES)
+        {
+            for (String typeName : BlockSetsHelper.PARQUET_TYPES)
+            {
+                ModJsonHelper.createStonecuttingRecipe("silverwoodtrees:"+name+"_planks",
+                        Registries.BLOCK.getId(ModBlocks.PARQUET_CARPETS.get(name+"_"+typeName)).getPath(), "3");
+                ModJsonHelper.createStonecuttingRecipe("silverwoodtrees:"+name+"_planks",
+                        Registries.BLOCK.getId(ModBlocks.PARQUET_BLOCKS.get(name+"_"+typeName)).getPath(), "1");
+            }
+        }
+
+        for(String name : BlockSetsHelper.MT_WOOD_NAMES)
+        {
+            for (String typeName : BlockSetsHelper.PARQUET_TYPES)
+            {
+                ModJsonHelper.createStonecuttingRecipe("missingtrees:"+name+"_planks",
+                        Registries.BLOCK.getId(ModBlocks.PARQUET_CARPETS.get(name+"_"+typeName)).getPath(), "3");
+                ModJsonHelper.createStonecuttingRecipe("missingtrees:"+name+"_planks",
+                        Registries.BLOCK.getId(ModBlocks.PARQUET_BLOCKS.get(name+"_"+typeName)).getPath(), "1");
+            }
+        }
+
+        for(String name : BlockSetsHelper.NSS_WOOD_NAMES)
+        {
+            for (String typeName : BlockSetsHelper.PARQUET_TYPES)
+            {
+                ModJsonHelper.createStonecuttingRecipe("natures_spirit:"+name.replace("_nss", "")+"_planks",
+                        Registries.BLOCK.getId(ModBlocks.PARQUET_CARPETS.get(name+"_"+typeName)).getPath(), "3");
+                ModJsonHelper.createStonecuttingRecipe("natures_spirit:"+name.replace("_nss", "")+"_planks",
+                        Registries.BLOCK.getId(ModBlocks.PARQUET_BLOCKS.get(name+"_"+typeName)).getPath(), "1");
+            }
+        }
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get("black"), 4)
                 .pattern("##")
                 .pattern("**")

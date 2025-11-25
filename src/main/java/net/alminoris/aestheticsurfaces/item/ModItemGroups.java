@@ -2,8 +2,11 @@ package net.alminoris.aestheticsurfaces.item;
 
 import net.alminoris.aestheticsurfaces.AestheticSurfaces;
 import net.alminoris.aestheticsurfaces.block.ModBlocks;
+import net.alminoris.aestheticsurfaces.block.custom.YAxisRotatedCarpetBlock;
 import net.alminoris.aestheticsurfaces.util.helper.BlockSetsHelper;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -18,6 +21,14 @@ public class ModItemGroups
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.asurftab"))
                     .icon(() -> new ItemStack(ModBlocks.SIMPLE_CARPETS.get("white"))).entries((displayContext, entries) ->
                     {
+                        for(String name : BlockSetsHelper.getWoods())
+                            for (String typeName : BlockSetsHelper.PARQUET_TYPES)
+                                entries.add(ModBlocks.PARQUET_CARPETS.get(name+"_"+typeName));
+
+                        for(String name : BlockSetsHelper.getWoods())
+                            for (String typeName : BlockSetsHelper.PARQUET_TYPES)
+                                entries.add(ModBlocks.PARQUET_BLOCKS.get(name+"_"+typeName));
+
                         for(String name : BlockSetsHelper.COLORS)
                             entries.add(ModBlocks.WALLPAPERS.get(name));
                         for(String name : BlockSetsHelper.COLORS)

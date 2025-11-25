@@ -30,17 +30,26 @@ public class ModModelProvider extends FabricModelProvider
             registerWoolCarpetAndWallpaper(blockStateModelGenerator, ModBlocks.SMOOTH_CARPET_BLOCKS.get(name), ModBlocks.SMOOTH_CARPETS.get(name), ModBlocks.SMOOTH_WALLPAPERS.get(name));
             registerWoolCarpetAndWallpaper(blockStateModelGenerator, ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get(name), ModBlocks.TRANSITIONAL_CARPETS.get(name), ModBlocks.TRANSITIONAL_WALLPAPERS.get(name));
         }
+
+        for(String name : BlockSetsHelper.getWoods())
+            for (String typeName : BlockSetsHelper.PARQUET_TYPES)
+                registerCarpetAndBlock(blockStateModelGenerator, ModBlocks.PARQUET_BLOCKS.get(name+"_"+typeName), ModBlocks.PARQUET_BLOCKS.get(name+"_"+typeName));
     }
 
-    public final void registerWoolCarpetAndWallpaper(BlockStateModelGenerator blockStateModelGenerator, Block wool, Block carpet, Block... wallpaper)
+    public final void registerCarpetAndBlock(BlockStateModelGenerator blockStateModelGenerator, Block block, Block carpet)
     {
-        ModJsonHelper.createBlockModel(ModJsonTemplates.CARPET_BLOCK_MODEL_TEMPLATE, Registries.BLOCK.getId(wool).getPath());
-        ModJsonHelper.createYAxisRotatedBlockState(Registries.BLOCK.getId(wool).getPath());
-        blockStateModelGenerator.registerParentedItemModel(wool, Identifier.of(AestheticSurfaces.MOD_ID, "block/"+Registries.BLOCK.getId(wool).getPath()));
+        ModJsonHelper.createBlockModel(ModJsonTemplates.CARPET_BLOCK_MODEL_TEMPLATE, Registries.BLOCK.getId(block).getPath());
+        ModJsonHelper.createYAxisRotatedBlockState(Registries.BLOCK.getId(block).getPath());
+        blockStateModelGenerator.registerParentedItemModel(block, Identifier.of(AestheticSurfaces.MOD_ID, "block/"+Registries.BLOCK.getId(block).getPath()));
 
         ModJsonHelper.createBlockModel(ModJsonTemplates.CARPET_MODEL_TEMPLATE, Registries.BLOCK.getId(carpet).getPath());
         ModJsonHelper.createYAxisRotatedBlockState(Registries.BLOCK.getId(carpet).getPath());
         blockStateModelGenerator.registerParentedItemModel(carpet, Identifier.of(AestheticSurfaces.MOD_ID, "block/"+Registries.BLOCK.getId(carpet).getPath()));
+    }
+
+    public final void registerWoolCarpetAndWallpaper(BlockStateModelGenerator blockStateModelGenerator, Block wool, Block carpet, Block... wallpaper)
+    {
+        registerCarpetAndBlock(blockStateModelGenerator, wool, carpet);
 
         if (wallpaper.length > 0)
         {

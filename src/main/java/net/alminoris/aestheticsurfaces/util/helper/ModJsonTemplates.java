@@ -2,6 +2,19 @@ package net.alminoris.aestheticsurfaces.util.helper;
 
 public class ModJsonTemplates
 {
+    public static String STONECUTTING_RECIPE = """
+            {
+              "type": "minecraft:stonecutting",
+              "ingredient": {
+                "item": "INGREDIENT_NAME"
+              },
+              "result": {
+                "count": COUNT,
+                "id": "aestheticsurfaces:OUTPUT_NAME"
+              }
+            }
+            """;
+
     public static String YAXIS_ROTATED_BLOCKSTATE_TEMPLATE = """
             {
               "variants": {
