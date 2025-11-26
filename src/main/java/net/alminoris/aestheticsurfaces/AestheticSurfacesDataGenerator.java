@@ -15,6 +15,7 @@ public class AestheticSurfacesDataGenerator implements DataGeneratorEntrypoint
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModBlockTagProvider::new);
+		pack.addProvider(ModItemTagProvider::new);
 		pack.addProvider(ModLanguageProviderEnUs::new);
 		pack.addProvider(ModLanguageProviderDeDe::new);
 		pack.addProvider(ModLanguageProviderEsEs::new);

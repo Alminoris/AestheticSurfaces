@@ -35,6 +35,31 @@ public class ModJsonHelper
         }
     }
 
+    public static void createBlockModel(String jsonContent, String name, String texture)
+    {
+        String projectPath = System.getProperty("user.dir");
+
+        String filePath = projectPath.replace("build\\datagen", "src\\main\\resources") + "/assets/"+ AestheticSurfaces.MOD_ID+"/models/block/";
+
+        File directory = new File(filePath);
+        if (!directory.exists())
+            directory.mkdirs();
+
+        String fileName = name + ".json";
+        File modelFile = new File(directory, fileName);
+
+        jsonContent = jsonContent.replace("NAME", texture);
+
+        try (FileWriter writer = new FileWriter(modelFile))
+        {
+            writer.write(jsonContent);
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
+
     public static void createWallpaperBlockModel(String jsonContent, String name, String colorName)
     {
         String projectPath = System.getProperty("user.dir");

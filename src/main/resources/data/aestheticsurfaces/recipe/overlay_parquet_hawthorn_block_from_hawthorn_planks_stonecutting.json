@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "arborealnature:hawthorn_planks"
+  },
+  "result": {
+    "count": 1,
+    "id": "aestheticsurfaces:overlay_parquet_hawthorn_block"
+  }
+}

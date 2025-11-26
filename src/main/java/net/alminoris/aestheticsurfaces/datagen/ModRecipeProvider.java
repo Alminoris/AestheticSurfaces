@@ -34,9 +34,10 @@ public class ModRecipeProvider extends FabricRecipeProvider
             for (String typeName : BlockSetsHelper.PARQUET_TYPES)
             {
                 offerStonecuttingRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PARQUET_CARPETS.get(name+"_"+typeName), block, 3);
-                offerStonecuttingRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PARQUET_BLOCKS.get(name+"_"+typeName), block, 1);
             }
         }
+
+        offerStonecuttingRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_STONE_ROAD, Blocks.SMOOTH_STONE, 1);
 
         for(String name : BlockSetsHelper.EXTRA_WOODS_AN)
         {

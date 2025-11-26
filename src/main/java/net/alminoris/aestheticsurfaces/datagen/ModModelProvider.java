@@ -33,7 +33,27 @@ public class ModModelProvider extends FabricModelProvider
 
         for(String name : BlockSetsHelper.getWoods())
             for (String typeName : BlockSetsHelper.PARQUET_TYPES)
-                registerCarpetAndBlock(blockStateModelGenerator, ModBlocks.PARQUET_BLOCKS.get(name+"_"+typeName), ModBlocks.PARQUET_BLOCKS.get(name+"_"+typeName));
+                registerCarpetAndParquetBlock(blockStateModelGenerator, ModBlocks.PARQUET_BLOCKS.get(name+"_"+typeName), ModBlocks.PARQUET_CARPETS.get(name+"_"+typeName));
+
+        registerPathBlockBlock(blockStateModelGenerator, ModBlocks.SMOOTH_STONE_ROAD, "minecraft:block/smooth_stone");
+    }
+
+    public final void registerPathBlockBlock(BlockStateModelGenerator blockStateModelGenerator, Block block, String texture)
+    {
+        ModJsonHelper.createBlockModel(ModJsonTemplates.PATH_BLOCK_MODEL_TEMPLATE, Registries.BLOCK.getId(block).getPath(), texture);
+        ModJsonHelper.createYAxisRotatedBlockState(Registries.BLOCK.getId(block).getPath());
+        blockStateModelGenerator.registerParentedItemModel(block, Identifier.of(AestheticSurfaces.MOD_ID, "block/"+Registries.BLOCK.getId(block).getPath()));
+    }
+
+    public final void registerCarpetAndParquetBlock(BlockStateModelGenerator blockStateModelGenerator, Block block, Block carpet)
+    {
+        ModJsonHelper.createBlockModel(ModJsonTemplates.PARQUET_BLOCK_MODEL_TEMPLATE, Registries.BLOCK.getId(block).getPath());
+        ModJsonHelper.createYAxisRotatedBlockState(Registries.BLOCK.getId(block).getPath());
+        blockStateModelGenerator.registerParentedItemModel(block, Identifier.of(AestheticSurfaces.MOD_ID, "block/"+Registries.BLOCK.getId(block).getPath()));
+
+        ModJsonHelper.createBlockModel(ModJsonTemplates.CARPET_MODEL_TEMPLATE, Registries.BLOCK.getId(carpet).getPath());
+        ModJsonHelper.createYAxisRotatedBlockState(Registries.BLOCK.getId(carpet).getPath());
+        blockStateModelGenerator.registerParentedItemModel(carpet, Identifier.of(AestheticSurfaces.MOD_ID, "block/"+Registries.BLOCK.getId(carpet).getPath()));
     }
 
     public final void registerCarpetAndBlock(BlockStateModelGenerator blockStateModelGenerator, Block block, Block carpet)

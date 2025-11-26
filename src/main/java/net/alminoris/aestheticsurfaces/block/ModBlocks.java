@@ -1,9 +1,7 @@
 package net.alminoris.aestheticsurfaces.block;
 
 import net.alminoris.aestheticsurfaces.AestheticSurfaces;
-import net.alminoris.aestheticsurfaces.block.custom.WallpaperBlock;
-import net.alminoris.aestheticsurfaces.block.custom.YAxisRotatedBlock;
-import net.alminoris.aestheticsurfaces.block.custom.YAxisRotatedCarpetBlock;
+import net.alminoris.aestheticsurfaces.block.custom.*;
 import net.alminoris.aestheticsurfaces.util.helper.BlockSetsHelper;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -19,6 +17,8 @@ import java.util.Hashtable;
 
 public class ModBlocks
 {
+    public static final Block SMOOTH_STONE_ROAD = registerBlock("smooth_stone_road", new PathBlock(AbstractBlock.Settings.copy(Blocks.SMOOTH_STONE)));
+
     public static final Dictionary<String, Block> PARQUET_CARPETS = new Hashtable<>()
     {{
         for(String name : BlockSetsHelper.getWoods())
@@ -36,7 +36,7 @@ public class ModBlocks
         {
             for (String typeName : BlockSetsHelper.PARQUET_TYPES)
             {
-                put(name, registerBlock(typeName+"_parquet_"+name+"_block", new YAxisRotatedBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS))));
+                put(name+"_"+typeName, registerBlock(typeName+"_parquet_"+name+"_block", new ParquetBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS))));
             }
         }
     }};

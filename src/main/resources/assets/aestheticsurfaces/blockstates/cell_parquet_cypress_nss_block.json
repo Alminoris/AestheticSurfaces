@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "aestheticsurfaces:block/cell_parquet_cypress_nss_block" },
+    "facing=south": { "model": "aestheticsurfaces:block/cell_parquet_cypress_nss_block", "y": 180 },
+    "facing=west": { "model": "aestheticsurfaces:block/cell_parquet_cypress_nss_block", "y": 270 },
+    "facing=east": { "model": "aestheticsurfaces:block/cell_parquet_cypress_nss_block", "y": 90 }
+  }
+}

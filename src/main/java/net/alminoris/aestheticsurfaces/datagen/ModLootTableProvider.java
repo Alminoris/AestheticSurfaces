@@ -32,12 +32,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider
             addDrop(ModBlocks.WALLPAPERS.get(name));
         }
 
+        addDrop(ModBlocks.SMOOTH_STONE_ROAD);
+
         for(String name : BlockSetsHelper.getWoods())
             for (String typeName : BlockSetsHelper.PARQUET_TYPES)
                 addDrop(ModBlocks.PARQUET_CARPETS.get(name+"_"+typeName));
 
         for(String name : BlockSetsHelper.getWoods())
             for (String typeName : BlockSetsHelper.PARQUET_TYPES)
-                addDrop(ModBlocks.PARQUET_BLOCKS.get(name+"_"+typeName));
+                addDrop(ModBlocks.PARQUET_BLOCKS.get(name+"_"+typeName), drops(ModBlocks.PARQUET_CARPETS.get(name+"_"+typeName)));
     }
 }

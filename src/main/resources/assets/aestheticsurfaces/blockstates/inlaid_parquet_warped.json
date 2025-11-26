@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "aestheticsurfaces:block/inlaid_parquet_warped" },
+    "facing=south": { "model": "aestheticsurfaces:block/inlaid_parquet_warped", "y": 180 },
+    "facing=west": { "model": "aestheticsurfaces:block/inlaid_parquet_warped", "y": 270 },
+    "facing=east": { "model": "aestheticsurfaces:block/inlaid_parquet_warped", "y": 90 }
+  }
+}
