@@ -41,8 +41,7 @@ public class ModModelProvider extends FabricModelProvider
     public final void registerPathBlockBlock(BlockStateModelGenerator blockStateModelGenerator, Block block, String texture)
     {
         ModJsonHelper.createBlockModel(ModJsonTemplates.PATH_BLOCK_MODEL_TEMPLATE, Registries.BLOCK.getId(block).getPath(), texture);
-        ModJsonHelper.createYAxisRotatedBlockState(Registries.BLOCK.getId(block).getPath());
-        blockStateModelGenerator.registerParentedItemModel(block, Identifier.of(AestheticSurfaces.MOD_ID, "block/"+Registries.BLOCK.getId(block).getPath()));
+        blockStateModelGenerator.registerSimpleState(block);
     }
 
     public final void registerCarpetAndParquetBlock(BlockStateModelGenerator blockStateModelGenerator, Block block, Block carpet)
