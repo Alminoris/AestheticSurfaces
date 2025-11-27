@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "facing=north": { "model": "aestheticsurfaces:block/smooth_stone_road" },
-    "facing=south": { "model": "aestheticsurfaces:block/smooth_stone_road", "y": 180 },
-    "facing=west": { "model": "aestheticsurfaces:block/smooth_stone_road", "y": 270 },
-    "facing=east": { "model": "aestheticsurfaces:block/smooth_stone_road", "y": 90 }
-  }
-}
