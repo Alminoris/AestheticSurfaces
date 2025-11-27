@@ -37,6 +37,17 @@ public class ModRecipeProvider extends FabricRecipeProvider
             }
         }
 
+        for (String name : BlockSetsHelper.CEILING_TYPES)
+        {
+
+        }
+
+        for (String name : BlockSetsHelper.COLORS)
+        {
+            offerStonecuttingRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COFFERED_CEILINGS.get(name),
+                    Registries.BLOCK.get(Identifier.ofVanilla(name+"_concrete")), 2);
+        }
+
         offerStonecuttingRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_STONE_ROAD, Blocks.SMOOTH_STONE, 1);
 
         for(String name : BlockSetsHelper.EXTRA_WOODS_AN)

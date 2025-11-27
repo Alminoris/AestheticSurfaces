@@ -7,6 +7,11 @@ public class BlockSetsHelper
                     "arenberg", "basket_weave", "cell", "french_chevron", "herringbone", "inlaid", "overlay"
             };
 
+    public static final String[] CEILING_TYPES =
+            {
+                    "tiles", "small_tiles", "tiny_tiles", "gypsum", "concrete", "smooth", "popcorn"
+            };
+
     public static final String[] COLORS =
             {
                     "black", "brown", "gray", "light_gray",

@@ -22,6 +22,12 @@ public class ModItemGroups
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.asurftab"))
                     .icon(() -> new ItemStack(ModBlocks.SIMPLE_CARPETS.get("white"))).entries((displayContext, entries) ->
                     {
+                        for(String name : BlockSetsHelper.COLORS)
+                                entries.add(ModBlocks.COFFERED_CEILINGS.get(name));
+
+                        for(String name : BlockSetsHelper.CEILING_TYPES)
+                            entries.add(ModBlocks.SLIM_CEILINGS.get(name));
+
                         entries.add(ModBlocks.SMOOTH_STONE_ROAD);
 
                         for(String name : BlockSetsHelper.WOODS)

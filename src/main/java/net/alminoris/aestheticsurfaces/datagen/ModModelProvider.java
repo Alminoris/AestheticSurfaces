@@ -29,18 +29,36 @@ public class ModModelProvider extends FabricModelProvider
             registerWoolCarpetAndWallpaper(blockStateModelGenerator, ModBlocks.SIMPLE_CARPET_BLOCKS.get(name), ModBlocks.SIMPLE_CARPETS.get(name), ModBlocks.SIMPLE_WALLPAPERS.get(name));
             registerWoolCarpetAndWallpaper(blockStateModelGenerator, ModBlocks.SMOOTH_CARPET_BLOCKS.get(name), ModBlocks.SMOOTH_CARPETS.get(name), ModBlocks.SMOOTH_WALLPAPERS.get(name));
             registerWoolCarpetAndWallpaper(blockStateModelGenerator, ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get(name), ModBlocks.TRANSITIONAL_CARPETS.get(name), ModBlocks.TRANSITIONAL_WALLPAPERS.get(name));
+            registerCofferedCeilingBlock(blockStateModelGenerator, ModBlocks.COFFERED_CEILINGS.get(name), name);
+        }
+
+        for(String name : BlockSetsHelper.CEILING_TYPES)
+        {
+            registerSlimCeilingBlock(blockStateModelGenerator, ModBlocks.SLIM_CEILINGS.get(name), name);
         }
 
         for(String name : BlockSetsHelper.getWoods())
             for (String typeName : BlockSetsHelper.PARQUET_TYPES)
                 registerCarpetAndParquetBlock(blockStateModelGenerator, ModBlocks.PARQUET_BLOCKS.get(name+"_"+typeName), ModBlocks.PARQUET_CARPETS.get(name+"_"+typeName));
 
-        registerPathBlockBlock(blockStateModelGenerator, ModBlocks.SMOOTH_STONE_ROAD, "minecraft:block/smooth_stone");
+        registerPathBlock(blockStateModelGenerator, ModBlocks.SMOOTH_STONE_ROAD, "minecraft:block/smooth_stone");
     }
 
-    public final void registerPathBlockBlock(BlockStateModelGenerator blockStateModelGenerator, Block block, String texture)
+    public final void registerPathBlock(BlockStateModelGenerator blockStateModelGenerator, Block block, String texture)
     {
         ModJsonHelper.createBlockModel(ModJsonTemplates.PATH_BLOCK_MODEL_TEMPLATE, Registries.BLOCK.getId(block).getPath(), texture);
+        blockStateModelGenerator.registerSimpleState(block);
+    }
+
+    public final void registerCofferedCeilingBlock(BlockStateModelGenerator blockStateModelGenerator, Block block, String color)
+    {
+        ModJsonHelper.createBlockModel(ModJsonTemplates.COFFERED_CEILING, Registries.BLOCK.getId(block).getPath(), "minecraft:block/"+color+"_concrete");
+        blockStateModelGenerator.registerSimpleState(block);
+    }
+
+    public final void registerSlimCeilingBlock(BlockStateModelGenerator blockStateModelGenerator, Block block, String type)
+    {
+        ModJsonHelper.createBlockModel(ModJsonTemplates.SLIM_CEILING, Registries.BLOCK.getId(block).getPath(), type);
         blockStateModelGenerator.registerSimpleState(block);
     }
 

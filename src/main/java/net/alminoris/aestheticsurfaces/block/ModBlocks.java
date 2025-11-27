@@ -41,6 +41,22 @@ public class ModBlocks
         }
     }};
 
+    public static final Dictionary<String, Block> SLIM_CEILINGS = new Hashtable<>()
+    {{
+        for(String name : BlockSetsHelper.CEILING_TYPES)
+        {
+            put(name, registerBlock("slim_ceiling_"+name, new SlimCeilingBlock(AbstractBlock.Settings.copy(Blocks.STONE))));
+        }
+    }};
+
+    public static final Dictionary<String, Block> COFFERED_CEILINGS = new Hashtable<>()
+    {{
+        for(String name : BlockSetsHelper.COLORS)
+        {
+            put(name, registerBlock("coffered_ceiling_"+name, new CofferedCeilingBlock(AbstractBlock.Settings.copy(Blocks.WHITE_CONCRETE))));
+        }
+    }};
+
     public static final Dictionary<String, Block> SIMPLE_CARPETS = new Hashtable<>()
     {{
         for(String name : BlockSetsHelper.COLORS)
