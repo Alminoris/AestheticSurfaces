@@ -37,6 +37,11 @@ public class ModModelProvider extends FabricModelProvider
             registerSlimCeilingBlock(blockStateModelGenerator, ModBlocks.SLIM_CEILINGS.get(name), name);
         }
 
+        for(String name : BlockSetsHelper.BRICKS_NAMES)
+        {
+            registerBricksVeneerBlock(blockStateModelGenerator, ModBlocks.BRICKS_VENEERS.get(name), name);
+        }
+
         for(String name : BlockSetsHelper.getWoods())
             for (String typeName : BlockSetsHelper.PARQUET_TYPES)
                 registerCarpetAndParquetBlock(blockStateModelGenerator, ModBlocks.PARQUET_BLOCKS.get(name+"_"+typeName), ModBlocks.PARQUET_CARPETS.get(name+"_"+typeName));
@@ -101,6 +106,24 @@ public class ModModelProvider extends FabricModelProvider
         ModJsonHelper.createWallpaperBlockModel(ModJsonTemplates.WALLPAPER_MODEL_TEMPLATE, Registries.BLOCK.getId(wallpaper).getPath(), colorName);
         ModJsonHelper.createYAxisRotatedBlockState(Registries.BLOCK.getId(wallpaper).getPath());
         blockStateModelGenerator.registerParentedItemModel(wallpaper, Identifier.of(AestheticSurfaces.MOD_ID, "block/"+Registries.BLOCK.getId(wallpaper).getPath()));
+    }
+
+    public final void registerBricksVeneerBlock(BlockStateModelGenerator blockStateModelGenerator, Block block, String name)
+    {
+        String jsonTemplate = switch(name)
+        {
+            case "bricks" -> ModJsonTemplates.BRICKS_VENEER;
+            case "quartz_bricks" -> ModJsonTemplates.QUARTZ_BRICKS_VENEER;
+            case "mud_bricks" -> ModJsonTemplates.MUD_BRICKS_VENEER;
+            case "prismarine_bricks" -> ModJsonTemplates.PRISMARINE_BRICKS_VENEER;
+            case "end_stone_bricks" -> ModJsonTemplates.END_STONE_BRICKS_VENEER;
+            case "nether_bricks", "red_nether_bricks" -> ModJsonTemplates.NETHER_BRICKS_VENEER;
+            default -> ModJsonTemplates.STONE_BRICKS_VENEER;
+        };
+
+        ModJsonHelper.createBlockModel(jsonTemplate, Registries.BLOCK.getId(block).getPath(), "minecraft:block/" + name);
+        ModJsonHelper.createYAxisRotatedBlockState(Registries.BLOCK.getId(block).getPath());
+        blockStateModelGenerator.registerParentedItemModel(block, Identifier.of(AestheticSurfaces.MOD_ID, "block/"+Registries.BLOCK.getId(block).getPath()));
     }
 
     @Override

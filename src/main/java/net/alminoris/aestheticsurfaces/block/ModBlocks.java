@@ -57,6 +57,14 @@ public class ModBlocks
         }
     }};
 
+    public static final Dictionary<String, Block> BRICKS_VENEERS = new Hashtable<>()
+    {{
+        for(String name : BlockSetsHelper.BRICKS_NAMES)
+        {
+            put(name, registerBlock("bricks_veneer_"+name, new BricksVeneerBlock(AbstractBlock.Settings.copy(Blocks.BRICKS))));
+        }
+    }};
+
     public static final Dictionary<String, Block> SIMPLE_CARPETS = new Hashtable<>()
     {{
         for(String name : BlockSetsHelper.COLORS)

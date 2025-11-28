@@ -60,7 +60,7 @@ public class WallpaperBlock extends YAxisRotatedBlock
         return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
     }
 
-    private VoxelShape getRotatedShape(BlockState state)
+    protected VoxelShape getRotatedShape(BlockState state)
     {
         Direction direction = state.get(FACING);
 

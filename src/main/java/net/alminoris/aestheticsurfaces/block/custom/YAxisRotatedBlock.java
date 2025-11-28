@@ -8,7 +8,7 @@ import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.Direction;
 
-public class YAxisRotatedBlock extends Block
+public class YAxisRotatedBlock extends WaterloggableBlock
 {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 

@@ -42,6 +42,12 @@ public class ModRecipeProvider extends FabricRecipeProvider
 
         }
 
+        for (String name : BlockSetsHelper.BRICKS_NAMES)
+        {
+            Block block = Registries.BLOCK.get(Identifier.ofVanilla(name));
+            offerStonecuttingRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BRICKS_VENEERS.get(name), block, 3);
+        }
+
         for (String name : BlockSetsHelper.COLORS)
         {
             offerStonecuttingRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COFFERED_CEILINGS.get(name),

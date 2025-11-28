@@ -20,6 +20,9 @@ public class BlockSetsHelper
                     "cyan", "light_blue", "green", "lime"
             };
 
+    public static final String[] BRICKS_NAMES = new String[] { "bricks", "deepslate_bricks", "mossy_stone_bricks", "mud_bricks", "nether_bricks",
+            "red_nether_bricks", "polished_blackstone_bricks", "prismarine_bricks", "quartz_bricks", "stone_bricks", "tuff_bricks", "end_stone_bricks" };
+
     public static final String[] STONES =
             {
                     "stone", "tuff", "blackstone", "andesite", "diorite", "granite",  "deepslate", "basalt_side",

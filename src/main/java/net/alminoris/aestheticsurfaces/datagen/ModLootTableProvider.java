@@ -38,6 +38,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider
             addDrop(ModBlocks.SLIM_CEILINGS.get(name));
         }
 
+        for(String name : BlockSetsHelper.BRICKS_NAMES)
+        {
+            addDrop(ModBlocks.BRICKS_VENEERS.get(name));
+        }
+
         addDrop(ModBlocks.SMOOTH_STONE_ROAD);
 
         for(String name : BlockSetsHelper.getWoods())

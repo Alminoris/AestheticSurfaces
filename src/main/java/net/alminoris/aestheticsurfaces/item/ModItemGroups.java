@@ -28,6 +28,9 @@ public class ModItemGroups
                         for(String name : BlockSetsHelper.CEILING_TYPES)
                             entries.add(ModBlocks.SLIM_CEILINGS.get(name));
 
+                        for(String name : BlockSetsHelper.BRICKS_NAMES)
+                            entries.add(ModBlocks.BRICKS_VENEERS.get(name));
+
                         entries.add(ModBlocks.SMOOTH_STONE_ROAD);
 
                         for(String name : BlockSetsHelper.WOODS)
