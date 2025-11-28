@@ -61,7 +61,7 @@ public class ModBlocks
     {{
         for(String name : BlockSetsHelper.BRICKS_NAMES)
         {
-            put(name, registerBlock("bricks_veneer_"+name, new BricksVeneerBlock(AbstractBlock.Settings.copy(Blocks.BRICKS))));
+            put(name, registerBlock("veneer_"+name, new BricksVeneerBlock(AbstractBlock.Settings.copy(Blocks.BRICKS))));
         }
     }};
 

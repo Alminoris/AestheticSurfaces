@@ -15,7 +15,7 @@ public class YAxisRotatedBlock extends WaterloggableBlock
     public YAxisRotatedBlock(Settings settings)
     {
         super(settings);
-        this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH));
+        this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH).with(WATERLOGGED, false));
     }
 
     @Override
@@ -27,6 +27,7 @@ public class YAxisRotatedBlock extends WaterloggableBlock
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder)
     {
+        super.appendProperties(builder);
         builder.add(FACING);
     }
 }

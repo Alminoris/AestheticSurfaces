@@ -21,7 +21,6 @@ public class WaterloggableBlock extends Block implements Waterloggable
     public WaterloggableBlock(Settings settings)
     {
         super(settings);
-        this.setDefaultState(this.stateManager.getDefaultState().with(WATERLOGGED, false));
     }
 
     @Override

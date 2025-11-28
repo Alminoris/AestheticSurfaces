@@ -262,7 +262,6 @@ public class ModJsonTemplates
 
     public static String BRICKS_VENEER = """
             {
-                "parent": "minecraft:block/block",
                 "format_version": "1.9.0",
                 	"credit": "Made with Blockbench",
                 	"textures": {
@@ -413,16 +412,45 @@ public class ModJsonTemplates
                 				"down": {"uv": [0, 15, 16, 16], "texture": "#0"}
                 			}
                 		}
-                	]
+                	],
+             	"display": {
+             		"thirdperson_righthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"thirdperson_lefthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"firstperson_righthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"firstperson_lefthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"ground": {
+             			"translation": [0, 2, 4],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"gui": {
+             			"rotation": [20, 45, 0],
+             			"translation": [3.5, -1, 0],
+             			"scale": [0.6, 0.6, 0.6]
+             		},
+             		"fixed": {
+             			"translation": [0, 0, 4.5],
+             			"scale": [0.5, 0.5, 0.5]
+             		}
+             	}
             }
             """;
 
     public static String STONE_BRICKS_VENEER = """
             {
-                "parent": "minecraft:block/block",
                 "format_version": "1.9.0",
                 	"credit": "Made with Blockbench",
-                	"parent": "stone_bricks_veneer",
                 	"textures": {
                 		"0": "NAME",
                 		"particle": "NAME"
@@ -480,13 +508,43 @@ public class ModJsonTemplates
                 				"down": {"uv": [0, 6, 15, 7], "texture": "#0"}
                 			}
                 		}
-                	]   
+                	],
+             	"display": {
+             		"thirdperson_righthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"thirdperson_lefthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"firstperson_righthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"firstperson_lefthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"ground": {
+             			"translation": [0, 2, 4],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"gui": {
+             			"rotation": [20, 45, 0],
+             			"translation": [3.5, -1, 0],
+             			"scale": [0.6, 0.6, 0.6]
+             		},
+             		"fixed": {
+             			"translation": [0, 0, 4.5],
+             			"scale": [0.5, 0.5, 0.5]
+             		}
+             	}
             }
             """;
 
     public static String END_STONE_BRICKS_VENEER = """
             {
-                "parent": "minecraft:block/block",
                 "format_version": "1.9.0",
                 	"credit": "Made with Blockbench",
                 	"textures": {
@@ -598,13 +656,43 @@ public class ModJsonTemplates
                 				"down": {"uv": [0, 5, 1, 6], "texture": "#0"}
                 			}
                 		}
-                	]
+                	],
+             	"display": {
+             		"thirdperson_righthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"thirdperson_lefthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"firstperson_righthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"firstperson_lefthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"ground": {
+             			"translation": [0, 2, 4],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"gui": {
+             			"rotation": [20, 45, 0],
+             			"translation": [3.5, -1, 0],
+             			"scale": [0.6, 0.6, 0.6]
+             		},
+             		"fixed": {
+             			"translation": [0, 0, 4.5],
+             			"scale": [0.5, 0.5, 0.5]
+             		}
+             	}
             }
             """;
 
     public static String MUD_BRICKS_VENEER = """
             {
-                "parent": "minecraft:block/block",
                 "format_version": "1.9.0",
                 	"credit": "Made with Blockbench",
                 	"textures": {
@@ -690,13 +778,43 @@ public class ModJsonTemplates
                 				"down": {"uv": [1, 6, 8, 7], "texture": "#0"}
                 			}
                 		}
-                	]
+                	],
+             	"display": {
+             		"thirdperson_righthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"thirdperson_lefthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"firstperson_righthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"firstperson_lefthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"ground": {
+             			"translation": [0, 2, 4],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"gui": {
+             			"rotation": [20, 45, 0],
+             			"translation": [3.5, -1, 0],
+             			"scale": [0.6, 0.6, 0.6]
+             		},
+             		"fixed": {
+             			"translation": [0, 0, 4.5],
+             			"scale": [0.5, 0.5, 0.5]
+             		}
+             	}
             }
             """;
 
     public static String QUARTZ_BRICKS_VENEER = """
             {
-                "parent": "minecraft:block/block",
                 "format_version": "1.9.0",
                 	"credit": "Made with Blockbench",
                 	"textures": {
@@ -769,13 +887,43 @@ public class ModJsonTemplates
                 				"down": {"uv": [0, 6, 15, 7], "texture": "#0"}
                 			}
                 		}
-                	]
+                	],
+             	"display": {
+             		"thirdperson_righthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"thirdperson_lefthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"firstperson_righthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"firstperson_lefthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"ground": {
+             			"translation": [0, 2, 4],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"gui": {
+             			"rotation": [20, 45, 0],
+             			"translation": [3.5, -1, 0],
+             			"scale": [0.6, 0.6, 0.6]
+             		},
+             		"fixed": {
+             			"translation": [0, 0, 4.5],
+             			"scale": [0.5, 0.5, 0.5]
+             		}
+             	}
             }
             """;
 
     public static String PRISMARINE_BRICKS_VENEER = """
             {
-                "parent": "minecraft:block/block",
                 "format_version": "1.9.0",
                 	"credit": "Made with Blockbench",
                 	"textures": {
@@ -978,13 +1126,43 @@ public class ModJsonTemplates
                 				"down": {"uv": [7, 6, 8, 7], "texture": "#0"}
                 			}
                 		}
-                	]
+                	],
+             	"display": {
+             		"thirdperson_righthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"thirdperson_lefthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"firstperson_righthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"firstperson_lefthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"ground": {
+             			"translation": [0, 2, 4],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"gui": {
+             			"rotation": [20, 45, 0],
+             			"translation": [3.5, -1, 0],
+             			"scale": [0.6, 0.6, 0.6]
+             		},
+             		"fixed": {
+             			"translation": [0, 0, 4.5],
+             			"scale": [0.5, 0.5, 0.5]
+             		}
+             	}
             }
             """;
 
     public static String NETHER_BRICKS_VENEER = """
             {
-                "parent": "minecraft:block/block",
                 "format_version": "1.9.0",
                 	"credit": "Made with Blockbench",
                 	"textures": {
@@ -1174,7 +1352,38 @@ public class ModJsonTemplates
                 				"down": {"uv": [1, 7, 8, 8], "texture": "#1"}
                 			}
                 		}
-                	]
+                	],
+             	"display": {
+             		"thirdperson_righthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"thirdperson_lefthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"firstperson_righthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"firstperson_lefthand": {
+             			"translation": [0, 1.75, 4.75],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"ground": {
+             			"translation": [0, 2, 4],
+             			"scale": [0.5, 0.5, 0.5]
+             		},
+             		"gui": {
+             			"rotation": [20, 45, 0],
+             			"translation": [3.5, -1, 0],
+             			"scale": [0.6, 0.6, 0.6]
+             		},
+             		"fixed": {
+             			"translation": [0, 0, 4.5],
+             			"scale": [0.5, 0.5, 0.5]
+             		}
+             	}
             }
             """;
 }

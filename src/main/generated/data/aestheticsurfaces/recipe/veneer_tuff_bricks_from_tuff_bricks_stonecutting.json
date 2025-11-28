@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:tuff_bricks"
+  },
+  "result": {
+    "count": 3,
+    "id": "aestheticsurfaces:veneer_tuff_bricks"
+  }
+}

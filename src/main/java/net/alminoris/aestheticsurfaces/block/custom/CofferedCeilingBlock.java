@@ -25,6 +25,7 @@ public class CofferedCeilingBlock extends WaterloggableBlock
     public CofferedCeilingBlock(Settings settings)
     {
         super(settings.nonOpaque());
+        this.setDefaultState(this.stateManager.getDefaultState().with(WATERLOGGED, false));
     }
 
     @Override

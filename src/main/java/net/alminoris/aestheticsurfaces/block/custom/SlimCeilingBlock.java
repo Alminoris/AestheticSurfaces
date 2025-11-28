@@ -18,6 +18,7 @@ public class SlimCeilingBlock extends WaterloggableBlock
     public SlimCeilingBlock(Settings settings)
     {
         super(settings.nonOpaque());
+        this.setDefaultState(this.stateManager.getDefaultState().with(WATERLOGGED, false));
     }
 
     @Override
