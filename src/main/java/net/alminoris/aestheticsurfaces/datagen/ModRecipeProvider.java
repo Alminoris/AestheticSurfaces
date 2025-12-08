@@ -9,6 +9,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.Registries;
@@ -37,10 +38,20 @@ public class ModRecipeProvider extends FabricRecipeProvider
             }
         }
 
-        for (String name : BlockSetsHelper.CEILING_TYPES)
-        {
-
-        }
+        offerStonecuttingRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SLIM_CEILINGS.get("smooth"), Blocks.SMOOTH_QUARTZ_SLAB, 2);
+        offerStonecuttingRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SLIM_CEILINGS.get("tiles"), ModBlocks.SLIM_CEILINGS.get("smooth"), 1);
+        offerStonecuttingRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SLIM_CEILINGS.get("small_tiles"), ModBlocks.SLIM_CEILINGS.get("tiles"), 1);
+        offerStonecuttingRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SLIM_CEILINGS.get("tiny_tiles"), ModBlocks.SLIM_CEILINGS.get("small_tiles"), 1);
+        offerStonecuttingRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SLIM_CEILINGS.get("concrete"), Blocks.LIGHT_GRAY_CONCRETE, 4);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SLIM_CEILINGS.get("gypsum"))
+                .input(Items.BONE_MEAL)
+                .input(Blocks.SAND)
+                .input(Items.WATER_BUCKET)
+                .criterion(hasItem(Items.BONE_MEAL), conditionsFromItem(Items.BONE_MEAL))
+                .criterion(hasItem(Blocks.SAND), conditionsFromItem(Blocks.SAND))
+                .criterion(hasItem(Items.WATER_BUCKET), conditionsFromItem(Items.WATER_BUCKET))
+                .offerTo(recipeExporter);
+        offerStonecuttingRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SLIM_CEILINGS.get("popcorn"), Blocks.DIORITE_SLAB, 2);
 
         for (String name : BlockSetsHelper.BRICKS_NAMES)
         {
