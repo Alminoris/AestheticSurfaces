@@ -24,40 +24,40 @@ public class ModLanguageProviderRuRu extends FabricLanguageProvider
         Map<String, String> stoneObjects = new LinkedHashMap<>();
 
         Map<String, String> woodObjects = new LinkedHashMap<>();
-        woodObjects.put("table_", "Стол из %s");
-        woodObjects.put("coffee_table_", "Кофейный столик из %s");
-        woodObjects.put("garden_table_", "Садовый стол из %s");
-        woodObjects.put("octagonal_table_", "Восьмиугольный столик из %s");
-        woodObjects.put("dining_table_", "Обеденный стол из %s");
-        woodObjects.put("kitchen_table_", "Кухонный стол из %s");
-        woodObjects.put("desk_table_", "Письменный стол из %s");
+        woodObjects.put("simple_carpet_", "ый простой ковёр");
+        woodObjects.put("simple_wallpaper_", "ые простые обои");
+        woodObjects.put("smooth_carpet", "ый гладкий ковёр");
+        woodObjects.put("smooth_wallpaper", "ые гладкие обои");
+        woodObjects.put("transitional_carpet_", "ый переходный ковёр");
+        woodObjects.put("transitional_wallpaper_", "ые переходные обои");
+        woodObjects.put("wallpaper_", "ые обои");
 
         Map<String, String> colorObjects = new LinkedHashMap<>();
-        colorObjects.put("table_", "Стол из %s");
-        colorObjects.put("coffee_table_", "Кофейный столик из %s");
-        colorObjects.put("garden_table_", "Садовый стол из %s");
-        colorObjects.put("octagonal_table_", "Восьмиугольный столик из %s");
-        colorObjects.put("dining_table_", "Обеденный стол из %s");
-        colorObjects.put("kitchen_table_", "Кухонный стол из %s");
-        colorObjects.put("desk_table_", "Письменный стол из %s");
+        colorObjects.put("simple_carpet_", "ый простой ковёр");
+        colorObjects.put("simple_wallpaper_", "ые простые обои");
+        colorObjects.put("smooth_carpet", "ый гладкий ковёр");
+        colorObjects.put("smooth_wallpaper", "ые гладкие обои");
+        colorObjects.put("transitional_carpet_", "ый переходный ковёр");
+        colorObjects.put("transitional_wallpaper_", "ые переходные обои");
+        colorObjects.put("wallpaper_", "ые обои");
 
         Map<String, String> colors = new LinkedHashMap<>();
-        colors.put("black", "Чёрная %s");
-        colors.put("brown", "Коричневая %s");
-        colors.put("gray", "Серая %s");
-        colors.put("light_gray", "Светло-серая %s");
-        colors.put("white", "Белая %s");
-        colors.put("red", "Красная %s");
-        colors.put("orange", "Оранжевая %s");
-        colors.put("yellow", "Жёлтая %s");
-        colors.put("blue", "Синяя %s");
-        colors.put("cyan", "Бирюзовая %s");
-        colors.put("light_blue", "Голубая %s");
-        colors.put("purple", "Фиолетовая %s");
-        colors.put("magenta", "Пурпурная %s");
-        colors.put("pink", "Розовая %s");
-        colors.put("green", "Зелёная %s");
-        colors.put("lime", "Лаймовая %s");
+        colors.put("black", "Чёрн%s");
+        colors.put("brown", "Коричнев%s");
+        colors.put("gray", "Сер%s");
+        colors.put("light_gray", "Светло-сер%s");
+        colors.put("white", "Бел%s");
+        colors.put("red", "Красн%s");
+        colors.put("orange", "Оранжев%s");
+        colors.put("yellow", "Жёлт%s");
+        colors.put("blue", "Син%s");
+        colors.put("cyan", "Бирюзов%s");
+        colors.put("light_blue", "Голуб%s");
+        colors.put("purple", "Фиолетов%s");
+        colors.put("magenta", "Пурпурн%s");
+        colors.put("pink", "Розов%s");
+        colors.put("green", "Зелён%s");
+        colors.put("lime", "Лаймов%s");
 
         Map<String, String> stoneMaterials = new LinkedHashMap<>();
         stoneMaterials.put("stone", "камня");
@@ -75,7 +75,7 @@ public class ModLanguageProviderRuRu extends FabricLanguageProvider
         stoneMaterials.put("sandstone", "песчаника");
         stoneMaterials.put("dolomite_block", "доломита");
         stoneMaterials.put("saltmarsh_block", "солончака");
-        stoneMaterials.put("loessic_marl_block", "лессового мергеля");
+        stoneMaterials.put("loessic_marl_block", "лёссового мергеля");
         stoneMaterials.put("loamy_marl_block", "суглинистого мергеля");
         stoneMaterials.put("fossil_marlstone_block", "ископаемого мергеля");
         stoneMaterials.put("limestone_block", "известняка");
@@ -90,13 +90,13 @@ public class ModLanguageProviderRuRu extends FabricLanguageProvider
         woodMaterials.put("larch", "лиственницы");
         woodMaterials.put("olive", "оливы");
         woodMaterials.put("tamarisk", "тамариска");
-        woodMaterials.put("western_serviceberry", "ирги западной");
+        woodMaterials.put("western_serviceberry", "западной ирги");
         woodMaterials.put("trembling_aspen", "осины");
-        woodMaterials.put("cottonwood", "тополя хлопкового");
-        woodMaterials.put("walnut", "грецкого ореха");
+        woodMaterials.put("cottonwood", "хлопкового тополя");
+        woodMaterials.put("walnut", "ореха");
         woodMaterials.put("silver_maple", "серебристого клёна");
         woodMaterials.put("staghorn_sumac", "сумаха");
-        woodMaterials.put("silverberry", "лохины серебристой");
+        woodMaterials.put("silverberry", "серебристого лоха");
         woodMaterials.put("willow", "ивы");
         woodMaterials.put("poplar", "тополя");
         woodMaterials.put("alder", "ольхи");
@@ -105,48 +105,20 @@ public class ModLanguageProviderRuRu extends FabricLanguageProvider
         woodMaterials.put("apple", "яблони");
         woodMaterials.put("scots_pine", "сосны обыкновенной");
         woodMaterials.put("swamp_oak", "болотного дуба");
-        woodMaterials.put("aspen_nss", "осины");
-        woodMaterials.put("cedar_nss", "кедра");
-        woodMaterials.put("coconut_nss", "кокосовой пальмы");
-        woodMaterials.put("cypress_nss", "кипариса");
-        woodMaterials.put("fir_nss", "пихты");
-        woodMaterials.put("ghaf_nss", "гафа");
-        woodMaterials.put("larch_nss", "лиственницы");
-        woodMaterials.put("mahogany_nss", "махагони");
-        woodMaterials.put("maple_nss", "клёна");
-        woodMaterials.put("olive_nss", "оливы");
-        woodMaterials.put("palo_verde_nss", "пало верде");
-        woodMaterials.put("redwood_nss", "секвойи");
-        woodMaterials.put("saxaul_nss", "саксаула");
-        woodMaterials.put("sugi_nss", "суги");
-        woodMaterials.put("willow_nss", "ивы");
-        woodMaterials.put("wisteria_nss", "глицинии");
+        woodMaterials.put("cedar", "кедра");
         woodMaterials.put("oak", "дуба");
         woodMaterials.put("birch", "берёзы");
         woodMaterials.put("spruce", "ели");
         woodMaterials.put("jungle", "тропического дерева");
         woodMaterials.put("acacia", "акации");
         woodMaterials.put("dark_oak", "тёмного дуба");
-        woodMaterials.put("crimson", "багрового дерева");
+        woodMaterials.put("crimson", "пурпурного дерева");
         woodMaterials.put("warped", "искажённого дерева");
         woodMaterials.put("mangrove", "мангрового дерева");
         woodMaterials.put("cherry", "вишни");
         woodMaterials.put("bamboo", "бамбука");
-        woodMaterials.put("hazelnut", "фундука");
-        woodMaterials.put("hornbeam", "граба");
-        woodMaterials.put("hawthorn", "боярышника");
-        woodMaterials.put("quince", "айвы");
-        woodMaterials.put("plum", "сливы");
-        woodMaterials.put("mango", "манго");
-        woodMaterials.put("fig", "инжира");
-        woodMaterials.put("viburnum", "калины");
-        woodMaterials.put("white_mulberry", "белой шелковицы");
-        woodMaterials.put("wild_cherry", "черешни");
-        woodMaterials.put("bauhinia", "баухинии");
         woodMaterials.put("pine", "сосны");
-        woodMaterials.put("fir", "ели");
-        woodMaterials.put("cedar", "кедра");
-        woodMaterials.put("araucaria", "араукарии");
+        woodMaterials.put("fir", "пихты");
         woodMaterials.put("juniper", "можжевельника");
 
         for (Map.Entry<String, String> type : colorObjects.entrySet())
@@ -155,9 +127,15 @@ public class ModLanguageProviderRuRu extends FabricLanguageProvider
             {
                 String key = "block." + AestheticSurfaces.MOD_ID + "." + type.getKey() + mat.getKey();
                 String value = String.format(mat.getValue(), type.getValue());
+
+                if (type.getKey().split("_").length > 1)
+                    if (type.getKey().split("_")[1].equals("carpet"))
+                        translationBuilder.add(key + "_block", value + " блок");
+
                 translationBuilder.add(key, value);
             }
         }
+
 
         translationBuilder.add("itemgroup.asurftab", "Aesthetic Surfaces");
     }
