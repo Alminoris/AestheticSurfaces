@@ -24,40 +24,40 @@ public class ModLanguageProviderDeDe extends FabricLanguageProvider
         Map<String, String> stoneObjects = new LinkedHashMap<>();
 
         Map<String, String> woodObjects = new LinkedHashMap<>();
-        woodObjects.put("table_", "Стол из %s");
-        woodObjects.put("coffee_table_", "Кофейный столик из %s");
-        woodObjects.put("garden_table_", "Садовый стол из %s");
-        woodObjects.put("octagonal_table_", "Восьмиугольный столик из %s");
-        woodObjects.put("dining_table_", "Обеденный стол из %s");
-        woodObjects.put("kitchen_table_", "Кухонный стол из %s");
-        woodObjects.put("desk_table_", "Письменный стол из %s");
+        woodObjects.put("simple_carpet_", "er einfacher Teppich");
+        woodObjects.put("simple_wallpaper_", "e einfache Tapete");
+        woodObjects.put("smooth_carpet", "er glatter Teppich");
+        woodObjects.put("smooth_wallpaper", "e glatte Tapete");
+        woodObjects.put("transitional_carpet_", "er Übergangsteppich");
+        woodObjects.put("transitional_wallpaper_", "e Übergangstapete");
+        woodObjects.put("wallpaper_", "e Tapete");
 
         Map<String, String> colorObjects = new LinkedHashMap<>();
-        colorObjects.put("table_", "Стол из %s");
-        colorObjects.put("coffee_table_", "Кофейный столик из %s");
-        colorObjects.put("garden_table_", "Садовый стол из %s");
-        colorObjects.put("octagonal_table_", "Восьмиугольный столик из %s");
-        colorObjects.put("dining_table_", "Обеденный стол из %s");
-        colorObjects.put("kitchen_table_", "Кухонный стол из %s");
-        colorObjects.put("desk_table_", "Письменный стол из %s");
+        colorObjects.put("simple_carpet_", "er einfacher Teppich");
+        colorObjects.put("simple_wallpaper_", "e einfache Tapete");
+        colorObjects.put("smooth_carpet", "er glatter Teppich");
+        colorObjects.put("smooth_wallpaper", "e glatte Tapete");
+        colorObjects.put("transitional_carpet_", "er Übergangsteppich");
+        colorObjects.put("transitional_wallpaper_", "e Übergangstapete");
+        colorObjects.put("wallpaper_", "e Tapete");
 
         Map<String, String> colors = new LinkedHashMap<>();
-        colors.put("black", "Schwarzer %s");
-        colors.put("brown", "Brauner %s");
-        colors.put("gray", "Grauer %s");
-        colors.put("light_gray", "Hellgrauer %s");
-        colors.put("white", "Weißer %s");
-        colors.put("red", "Roter %s");
-        colors.put("orange", "Oranger %s");
-        colors.put("yellow", "Gelber %s");
-        colors.put("blue", "Blauer %s");
-        colors.put("cyan", "Türkiser %s");
-        colors.put("light_blue", "Hellblauer %s");
-        colors.put("purple", "Violetter %s");
-        colors.put("magenta", "Magenta %s");
-        colors.put("pink", "Rosa %s");
-        colors.put("green", "Grüner %s");
-        colors.put("lime", "Hellgrüner %s");
+        colors.put("black", "Schwarz%s");
+        colors.put("brown", "Braun%s");
+        colors.put("gray", "Grau%s");
+        colors.put("light_gray", "Hellgrau%s");
+        colors.put("white", "Weiß%s");
+        colors.put("red", "Rot%s");
+        colors.put("orange", "Orange%s");
+        colors.put("yellow", "Gelb%s");
+        colors.put("blue", "Blau%s");
+        colors.put("cyan", "Türkis%s");
+        colors.put("light_blue", "Hellblau%s");
+        colors.put("purple", "Violett%s");
+        colors.put("magenta", "Magenta%s");
+        colors.put("pink", "Rosa%s");
+        colors.put("green", "Grün%s");
+        colors.put("lime", "Limetten%s");
 
         Map<String, String> stoneMaterials = new LinkedHashMap<>();
         stoneMaterials.put("stone", "Stein");
@@ -76,23 +76,23 @@ public class ModLanguageProviderDeDe extends FabricLanguageProvider
         stoneMaterials.put("dolomite_block", "Dolomit");
         stoneMaterials.put("saltmarsh_block", "Salzmarschstein");
         stoneMaterials.put("loessic_marl_block", "Lössmergel");
-        stoneMaterials.put("loamy_marl_block", "Lehmmergel");
-        stoneMaterials.put("fossil_marlstone_block", "Fossiler Mergelstein");
+        stoneMaterials.put("loamy_marl_block", "Lehmmargel");
+        stoneMaterials.put("fossil_marlstone_block", "Fossiler Mergel");
         stoneMaterials.put("limestone_block", "Kalkstein");
 
         Map<String, String> woodMaterials = new LinkedHashMap<>();
         woodMaterials.put("bald_cypress", "Sumpfzypresse");
-        woodMaterials.put("thuja", "Lebensbaum");
-        woodMaterials.put("sequoia", "Mammutbaum");
+        woodMaterials.put("thuja", "Thuja");
+        woodMaterials.put("sequoia", "Sequoia");
         woodMaterials.put("mountain_hemlock", "Berg-Hemlocktanne");
         woodMaterials.put("cryptomeria", "Kryptomerie");
         woodMaterials.put("yew", "Eibe");
         woodMaterials.put("larch", "Lärche");
-        woodMaterials.put("olive", "Olive");
+        woodMaterials.put("olive", "Olivenholz");
         woodMaterials.put("tamarisk", "Tamariske");
-        woodMaterials.put("western_serviceberry", "Felsenmispel");
+        woodMaterials.put("western_serviceberry", "Westliche Felsenbirne");
         woodMaterials.put("trembling_aspen", "Zitterpappel");
-        woodMaterials.put("cottonwood", "Pappel");
+        woodMaterials.put("cottonwood", "Baumwollpappel");
         woodMaterials.put("walnut", "Walnuss");
         woodMaterials.put("silver_maple", "Silberahorn");
         woodMaterials.put("staghorn_sumac", "Essigbaum");
@@ -110,13 +110,13 @@ public class ModLanguageProviderDeDe extends FabricLanguageProvider
         woodMaterials.put("coconut_nss", "Kokospalme");
         woodMaterials.put("cypress_nss", "Zypresse");
         woodMaterials.put("fir_nss", "Tanne");
-        woodMaterials.put("ghaf_nss", "Ghaf");
+        woodMaterials.put("ghaf_nss", "Ghaf-Baum");
         woodMaterials.put("larch_nss", "Lärche");
         woodMaterials.put("mahogany_nss", "Mahagoni");
         woodMaterials.put("maple_nss", "Ahorn");
         woodMaterials.put("olive_nss", "Olive");
         woodMaterials.put("palo_verde_nss", "Palo Verde");
-        woodMaterials.put("redwood_nss", "Riesenmammutbaum");
+        woodMaterials.put("redwood_nss", "Küstenmammutbaum");
         woodMaterials.put("saxaul_nss", "Saxaul");
         woodMaterials.put("sugi_nss", "Sugi");
         woodMaterials.put("willow_nss", "Weide");
@@ -126,13 +126,13 @@ public class ModLanguageProviderDeDe extends FabricLanguageProvider
         woodMaterials.put("spruce", "Fichte");
         woodMaterials.put("jungle", "Tropenholz");
         woodMaterials.put("acacia", "Akazie");
-        woodMaterials.put("dark_oak", "Dunkeleiche");
-        woodMaterials.put("crimson", "Purpurholz");
+        woodMaterials.put("dark_oak", "Dunkle Eiche");
+        woodMaterials.put("crimson", "Karmesinholz");
         woodMaterials.put("warped", "Wirrholz");
         woodMaterials.put("mangrove", "Mangrovenholz");
-        woodMaterials.put("cherry", "Kirschbaum");
+        woodMaterials.put("cherry", "Kirsche");
         woodMaterials.put("bamboo", "Bambus");
-        woodMaterials.put("hazelnut", "Hasel");
+        woodMaterials.put("hazelnut", "Haselnuss");
         woodMaterials.put("hornbeam", "Hainbuche");
         woodMaterials.put("hawthorn", "Weißdorn");
         woodMaterials.put("quince", "Quitte");
@@ -155,9 +155,14 @@ public class ModLanguageProviderDeDe extends FabricLanguageProvider
             {
                 String key = "block." + AestheticSurfaces.MOD_ID + "." + type.getKey() + mat.getKey();
                 String value = String.format(mat.getValue(), type.getValue());
+                if (type.getKey().split("_").length > 1)
+                    if (type.getKey().split("_")[1].equals("carpet"))
+                        translationBuilder.add(key + "_block", value + " Block");
+
                 translationBuilder.add(key, value);
             }
         }
+
 
         translationBuilder.add("itemgroup.asurftab", "Aesthetic Surfaces");
     }
