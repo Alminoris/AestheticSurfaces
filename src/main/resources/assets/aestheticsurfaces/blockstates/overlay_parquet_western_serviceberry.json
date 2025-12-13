@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "aestheticsurfaces:block/overlay_parquet_western_serviceberry" },
+    "facing=south": { "model": "aestheticsurfaces:block/overlay_parquet_western_serviceberry", "y": 180 },
+    "facing=west": { "model": "aestheticsurfaces:block/overlay_parquet_western_serviceberry", "y": 270 },
+    "facing=east": { "model": "aestheticsurfaces:block/overlay_parquet_western_serviceberry", "y": 90 }
+  }
+}

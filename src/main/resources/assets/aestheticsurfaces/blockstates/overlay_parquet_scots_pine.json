@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "aestheticsurfaces:block/overlay_parquet_scots_pine" },
+    "facing=south": { "model": "aestheticsurfaces:block/overlay_parquet_scots_pine", "y": 180 },
+    "facing=west": { "model": "aestheticsurfaces:block/overlay_parquet_scots_pine", "y": 270 },
+    "facing=east": { "model": "aestheticsurfaces:block/overlay_parquet_scots_pine", "y": 90 }
+  }
+}

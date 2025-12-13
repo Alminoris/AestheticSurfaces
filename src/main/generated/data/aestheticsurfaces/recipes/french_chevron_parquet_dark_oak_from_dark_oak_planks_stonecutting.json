@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 3,
+  "ingredient": {
+    "item": "minecraft:dark_oak_planks"
+  },
+  "result": "aestheticsurfaces:french_chevron_parquet_dark_oak"
+}

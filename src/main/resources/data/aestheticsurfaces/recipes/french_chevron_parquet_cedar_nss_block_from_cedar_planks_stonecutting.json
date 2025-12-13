@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "natures_spirit:cedar_planks"
+  },
+  "result": {
+    "count": 1,
+    "item": "aestheticsurfaces:french_chevron_parquet_cedar_nss_block"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "aestheticsurfaces:block/overlay_parquet_swamp_oak" },
+    "facing=south": { "model": "aestheticsurfaces:block/overlay_parquet_swamp_oak", "y": 180 },
+    "facing=west": { "model": "aestheticsurfaces:block/overlay_parquet_swamp_oak", "y": 270 },
+    "facing=east": { "model": "aestheticsurfaces:block/overlay_parquet_swamp_oak", "y": 90 }
+  }
+}

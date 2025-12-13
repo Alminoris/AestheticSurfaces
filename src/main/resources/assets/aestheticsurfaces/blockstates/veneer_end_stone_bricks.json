@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "aestheticsurfaces:block/veneer_end_stone_bricks" },
+    "facing=south": { "model": "aestheticsurfaces:block/veneer_end_stone_bricks", "y": 180 },
+    "facing=west": { "model": "aestheticsurfaces:block/veneer_end_stone_bricks", "y": 270 },
+    "facing=east": { "model": "aestheticsurfaces:block/veneer_end_stone_bricks", "y": 90 }
+  }
+}

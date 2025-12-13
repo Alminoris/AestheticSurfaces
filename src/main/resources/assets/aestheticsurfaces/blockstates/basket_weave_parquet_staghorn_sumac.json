@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "aestheticsurfaces:block/basket_weave_parquet_staghorn_sumac" },
+    "facing=south": { "model": "aestheticsurfaces:block/basket_weave_parquet_staghorn_sumac", "y": 180 },
+    "facing=west": { "model": "aestheticsurfaces:block/basket_weave_parquet_staghorn_sumac", "y": 270 },
+    "facing=east": { "model": "aestheticsurfaces:block/basket_weave_parquet_staghorn_sumac", "y": 90 }
+  }
+}

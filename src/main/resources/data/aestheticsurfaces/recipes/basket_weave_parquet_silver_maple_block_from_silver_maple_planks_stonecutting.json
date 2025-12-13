@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "silverwoodtrees:silver_maple_planks"
+  },
+  "result": {
+    "count": 1,
+    "item": "aestheticsurfaces:basket_weave_parquet_silver_maple_block"
+  }
+}
