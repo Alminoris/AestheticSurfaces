@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_slim_ceiling_smooth": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "aestheticsurfaces:slim_ceiling_smooth"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:slim_ceiling_tiles_from_slim_ceiling_smooth_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_slim_ceiling_smooth",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:slim_ceiling_tiles_from_slim_ceiling_smooth_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

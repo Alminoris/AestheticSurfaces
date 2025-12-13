@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "aestheticsurfaces:block/basket_weave_parquet_poplar"
+  }
+}

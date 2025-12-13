@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "silverwoodtrees:walnut_planks"
+  },
+  "result": {
+    "count": 1,
+    "item": "aestheticsurfaces:overlay_parquet_walnut_block"
+  }
+}

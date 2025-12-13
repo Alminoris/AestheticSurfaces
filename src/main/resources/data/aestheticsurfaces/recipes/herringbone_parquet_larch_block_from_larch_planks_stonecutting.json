@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "arborealnature:larch_planks"
+  },
+  "result": {
+    "count": 1,
+    "item": "aestheticsurfaces:herringbone_parquet_larch_block"
+  }
+}

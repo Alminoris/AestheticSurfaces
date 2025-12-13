@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "aestheticsurfaces:block/overlay_parquet_cedar_nss_block" },
+    "facing=south": { "model": "aestheticsurfaces:block/overlay_parquet_cedar_nss_block", "y": 180 },
+    "facing=west": { "model": "aestheticsurfaces:block/overlay_parquet_cedar_nss_block", "y": 270 },
+    "facing=east": { "model": "aestheticsurfaces:block/overlay_parquet_cedar_nss_block", "y": 90 }
+  }
+}
