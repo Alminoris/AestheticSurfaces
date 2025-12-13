@@ -29,18 +29,69 @@ public class ModModelProvider extends FabricModelProvider
             registerWoolCarpetAndWallpaper(blockStateModelGenerator, ModBlocks.SIMPLE_CARPET_BLOCKS.get(name), ModBlocks.SIMPLE_CARPETS.get(name), ModBlocks.SIMPLE_WALLPAPERS.get(name));
             registerWoolCarpetAndWallpaper(blockStateModelGenerator, ModBlocks.SMOOTH_CARPET_BLOCKS.get(name), ModBlocks.SMOOTH_CARPETS.get(name), ModBlocks.SMOOTH_WALLPAPERS.get(name));
             registerWoolCarpetAndWallpaper(blockStateModelGenerator, ModBlocks.TRANSITIONAL_CARPET_BLOCKS.get(name), ModBlocks.TRANSITIONAL_CARPETS.get(name), ModBlocks.TRANSITIONAL_WALLPAPERS.get(name));
+            registerCofferedCeilingBlock(blockStateModelGenerator, ModBlocks.COFFERED_CEILINGS.get(name), name);
         }
+
+        for(String name : BlockSetsHelper.CEILING_TYPES)
+        {
+            registerSlimCeilingBlock(blockStateModelGenerator, ModBlocks.SLIM_CEILINGS.get(name), name);
+        }
+
+        for(String name : BlockSetsHelper.BRICKS_NAMES)
+        {
+            registerBricksVeneerBlock(blockStateModelGenerator, ModBlocks.BRICKS_VENEERS.get(name), name);
+        }
+
+        for(String name : BlockSetsHelper.getWoods())
+            for (String typeName : BlockSetsHelper.PARQUET_TYPES)
+                registerCarpetAndParquetBlock(blockStateModelGenerator, ModBlocks.PARQUET_BLOCKS.get(name+"_"+typeName), ModBlocks.PARQUET_CARPETS.get(name+"_"+typeName));
+
+        registerPathBlock(blockStateModelGenerator, ModBlocks.SMOOTH_STONE_ROAD, "minecraft:block/smooth_stone");
     }
 
-    public final void registerWoolCarpetAndWallpaper(BlockStateModelGenerator blockStateModelGenerator, Block wool, Block carpet, Block... wallpaper)
+    public final void registerPathBlock(BlockStateModelGenerator blockStateModelGenerator, Block block, String texture)
     {
-        ModJsonHelper.createBlockModel(ModJsonTemplates.CARPET_BLOCK_MODEL_TEMPLATE, Registries.BLOCK.getId(wool).getPath());
-        ModJsonHelper.createYAxisRotatedBlockState(Registries.BLOCK.getId(wool).getPath());
-        blockStateModelGenerator.registerParentedItemModel(wool, Identifier.of(AestheticSurfaces.MOD_ID, "block/"+Registries.BLOCK.getId(wool).getPath()));
+        ModJsonHelper.createBlockModel(ModJsonTemplates.PATH_BLOCK_MODEL_TEMPLATE, Registries.BLOCK.getId(block).getPath(), texture);
+        blockStateModelGenerator.registerSimpleState(block);
+    }
+
+    public final void registerCofferedCeilingBlock(BlockStateModelGenerator blockStateModelGenerator, Block block, String color)
+    {
+        ModJsonHelper.createBlockModel(ModJsonTemplates.COFFERED_CEILING, Registries.BLOCK.getId(block).getPath(), "minecraft:block/"+color+"_concrete");
+        blockStateModelGenerator.registerSimpleState(block);
+    }
+
+    public final void registerSlimCeilingBlock(BlockStateModelGenerator blockStateModelGenerator, Block block, String type)
+    {
+        ModJsonHelper.createBlockModel(ModJsonTemplates.SLIM_CEILING, Registries.BLOCK.getId(block).getPath(), type);
+        blockStateModelGenerator.registerSimpleState(block);
+    }
+
+    public final void registerCarpetAndParquetBlock(BlockStateModelGenerator blockStateModelGenerator, Block block, Block carpet)
+    {
+        ModJsonHelper.createBlockModel(ModJsonTemplates.PARQUET_BLOCK_MODEL_TEMPLATE, Registries.BLOCK.getId(block).getPath());
+        ModJsonHelper.createYAxisRotatedBlockState(Registries.BLOCK.getId(block).getPath());
+        blockStateModelGenerator.registerParentedItemModel(block, Identifier.of(AestheticSurfaces.MOD_ID, "block/"+Registries.BLOCK.getId(block).getPath()));
 
         ModJsonHelper.createBlockModel(ModJsonTemplates.CARPET_MODEL_TEMPLATE, Registries.BLOCK.getId(carpet).getPath());
         ModJsonHelper.createYAxisRotatedBlockState(Registries.BLOCK.getId(carpet).getPath());
         blockStateModelGenerator.registerParentedItemModel(carpet, Identifier.of(AestheticSurfaces.MOD_ID, "block/"+Registries.BLOCK.getId(carpet).getPath()));
+    }
+
+    public final void registerCarpetAndBlock(BlockStateModelGenerator blockStateModelGenerator, Block block, Block carpet)
+    {
+        ModJsonHelper.createBlockModel(ModJsonTemplates.CARPET_BLOCK_MODEL_TEMPLATE, Registries.BLOCK.getId(block).getPath());
+        ModJsonHelper.createYAxisRotatedBlockState(Registries.BLOCK.getId(block).getPath());
+        blockStateModelGenerator.registerParentedItemModel(block, Identifier.of(AestheticSurfaces.MOD_ID, "block/"+Registries.BLOCK.getId(block).getPath()));
+
+        ModJsonHelper.createBlockModel(ModJsonTemplates.CARPET_MODEL_TEMPLATE, Registries.BLOCK.getId(carpet).getPath());
+        ModJsonHelper.createYAxisRotatedBlockState(Registries.BLOCK.getId(carpet).getPath());
+        blockStateModelGenerator.registerParentedItemModel(carpet, Identifier.of(AestheticSurfaces.MOD_ID, "block/"+Registries.BLOCK.getId(carpet).getPath()));
+    }
+
+    public final void registerWoolCarpetAndWallpaper(BlockStateModelGenerator blockStateModelGenerator, Block wool, Block carpet, Block... wallpaper)
+    {
+        registerCarpetAndBlock(blockStateModelGenerator, wool, carpet);
 
         if (wallpaper.length > 0)
         {
@@ -55,6 +106,24 @@ public class ModModelProvider extends FabricModelProvider
         ModJsonHelper.createWallpaperBlockModel(ModJsonTemplates.WALLPAPER_MODEL_TEMPLATE, Registries.BLOCK.getId(wallpaper).getPath(), colorName);
         ModJsonHelper.createYAxisRotatedBlockState(Registries.BLOCK.getId(wallpaper).getPath());
         blockStateModelGenerator.registerParentedItemModel(wallpaper, Identifier.of(AestheticSurfaces.MOD_ID, "block/"+Registries.BLOCK.getId(wallpaper).getPath()));
+    }
+
+    public final void registerBricksVeneerBlock(BlockStateModelGenerator blockStateModelGenerator, Block block, String name)
+    {
+        String jsonTemplate = switch(name)
+        {
+            case "bricks" -> ModJsonTemplates.BRICKS_VENEER;
+            case "quartz_bricks" -> ModJsonTemplates.QUARTZ_BRICKS_VENEER;
+            case "mud_bricks" -> ModJsonTemplates.MUD_BRICKS_VENEER;
+            case "prismarine_bricks" -> ModJsonTemplates.PRISMARINE_BRICKS_VENEER;
+            case "end_stone_bricks" -> ModJsonTemplates.END_STONE_BRICKS_VENEER;
+            case "nether_bricks", "red_nether_bricks" -> ModJsonTemplates.NETHER_BRICKS_VENEER;
+            default -> ModJsonTemplates.STONE_BRICKS_VENEER;
+        };
+
+        ModJsonHelper.createBlockModel(jsonTemplate, Registries.BLOCK.getId(block).getPath(), "minecraft:block/" + name);
+        ModJsonHelper.createYAxisRotatedBlockState(Registries.BLOCK.getId(block).getPath());
+        blockStateModelGenerator.registerParentedItemModel(block, Identifier.of(AestheticSurfaces.MOD_ID, "block/"+Registries.BLOCK.getId(block).getPath()));
     }
 
     @Override

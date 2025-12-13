@@ -8,14 +8,14 @@ import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.Direction;
 
-public class YAxisRotatedBlock extends Block
+public class YAxisRotatedBlock extends WaterloggableBlock
 {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
     public YAxisRotatedBlock(Settings settings)
     {
         super(settings);
-        this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH));
+        this.setDefaultState(this.stateManager.getDefaultState().with(FACING, Direction.NORTH).with(WATERLOGGED, false));
     }
 
     @Override
@@ -27,6 +27,7 @@ public class YAxisRotatedBlock extends Block
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder)
     {
+        super.appendProperties(builder);
         builder.add(FACING);
     }
 }

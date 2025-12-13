@@ -1,6 +1,8 @@
 package net.alminoris.aestheticsurfaces.datagen;
 
 import net.alminoris.aestheticsurfaces.block.ModBlocks;
+import net.alminoris.aestheticsurfaces.util.ModTags;
+import net.alminoris.aestheticsurfaces.util.helper.BlockSetsHelper;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -32,5 +34,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider
                     .add(ModBlocks.SMOOTH_CARPETS.get(name))
                     .add(ModBlocks.TRANSITIONAL_CARPETS.get(name));
         }
+
+        for(String name : BlockSetsHelper.getWoods())
+            for (String typeName : BlockSetsHelper.PARQUET_TYPES)
+                getOrCreateTagBuilder(ModTags.Blocks.PARQUET_CARPETS)
+                        .add(ModBlocks.PARQUET_CARPETS.get(name+"_"+typeName));
     }
 }
