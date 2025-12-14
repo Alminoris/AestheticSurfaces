@@ -2,6 +2,7 @@ package net.alminoris.aestheticsurfaces.item;
 
 import net.alminoris.aestheticsurfaces.AestheticSurfaces;
 import net.minecraft.item.Item;
+
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
