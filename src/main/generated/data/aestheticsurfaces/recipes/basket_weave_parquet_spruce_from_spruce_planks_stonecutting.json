@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 3,
+  "ingredient": {
+    "item": "minecraft:spruce_planks"
+  },
+  "result": "aestheticsurfaces:basket_weave_parquet_spruce"
+}

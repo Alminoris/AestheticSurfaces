@@ -32,7 +32,7 @@ public class ModItemGroups
             "larch_nss", "mahogany_nss", "maple_nss", "olive_nss", "palo_verde_nss", "redwood_nss", "saxaul_nss", "sugi_nss", "willow_nss", "wisteria_nss");
 
     public static final ItemGroup ASURF_TAB = FabricItemGroupBuilder.build(new Identifier(AestheticSurfaces.MOD_ID, "asurftab"),
-            () -> new ItemStack(ModBlocks.PARQUET_CARPETS.get("oak")));
+            () -> new ItemStack(ModBlocks.SIMPLE_CARPETS.get("white")));
 
     public static void registerItemGroups()
     {

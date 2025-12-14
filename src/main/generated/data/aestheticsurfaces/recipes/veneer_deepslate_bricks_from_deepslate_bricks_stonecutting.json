@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 3,
+  "ingredient": {
+    "item": "minecraft:deepslate_bricks"
+  },
+  "result": "aestheticsurfaces:veneer_deepslate_bricks"
+}
