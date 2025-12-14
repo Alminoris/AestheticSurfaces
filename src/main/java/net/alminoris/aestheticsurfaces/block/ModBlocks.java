@@ -2,6 +2,7 @@ package net.alminoris.aestheticsurfaces.block;
 
 import net.alminoris.aestheticsurfaces.AestheticSurfaces;
 import net.alminoris.aestheticsurfaces.block.custom.*;
+import net.alminoris.aestheticsurfaces.item.ModItemGroups;
 import net.alminoris.aestheticsurfaces.util.helper.BlockSetsHelper;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -154,7 +155,7 @@ public class ModBlocks
     private static void registerBlockItem(String name, Block block)
     {
         Registry.register(Registry.ITEM, Identifier.of(AestheticSurfaces.MOD_ID, name),
-                new BlockItem(block, new Item.Settings()));
+                new BlockItem(block, new Item.Settings().group(ModItemGroups.ASURF_TAB)));
     }
 
     public static void registerBlocks()
