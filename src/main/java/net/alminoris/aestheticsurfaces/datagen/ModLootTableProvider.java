@@ -5,15 +5,18 @@ import net.alminoris.aestheticsurfaces.util.helper.BlockSetsHelper;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 
+
+
+
 public class ModLootTableProvider extends FabricBlockLootTableProvider
 {
-    public ModLootTableProvider(FabricDataGenerator dataGenerator)
+    public ModLootTableProvider(FabricDataGenerator dataOutput)
     {
-        super(dataGenerator);
+        super(dataOutput);
     }
 
     @Override
-    protected void generateBlockLootTables()
+    public void generateBlockLootTables()
     {
         for(String name : BlockSetsHelper.COLORS)
         {
@@ -27,6 +30,27 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider
             addDrop(ModBlocks.SMOOTH_WALLPAPERS.get(name));
             addDrop(ModBlocks.TRANSITIONAL_WALLPAPERS.get(name));
             addDrop(ModBlocks.WALLPAPERS.get(name));
+            addDrop(ModBlocks.COFFERED_CEILINGS.get(name));
         }
+
+        for(String name : BlockSetsHelper.CEILING_TYPES)
+        {
+            addDrop(ModBlocks.SLIM_CEILINGS.get(name));
+        }
+
+        for(String name : BlockSetsHelper.BRICKS_NAMES)
+        {
+            addDrop(ModBlocks.BRICKS_VENEERS.get(name));
+        }
+
+        addDrop(ModBlocks.SMOOTH_STONE_ROAD);
+
+        for(String name : BlockSetsHelper.getWoods())
+            for (String typeName : BlockSetsHelper.PARQUET_TYPES)
+                addDrop(ModBlocks.PARQUET_CARPETS.get(name+"_"+typeName));
+
+        for(String name : BlockSetsHelper.getWoods())
+            for (String typeName : BlockSetsHelper.PARQUET_TYPES)
+                addDrop(ModBlocks.PARQUET_BLOCKS.get(name+"_"+typeName), drops(ModBlocks.PARQUET_CARPETS.get(name+"_"+typeName)));
     }
 }

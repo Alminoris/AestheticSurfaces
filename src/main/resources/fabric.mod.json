@@ -5,13 +5,13 @@
 	"name": "Aesthetic Surfaces",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"Almiris (Alminoris)"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "",
+		"sources": "https://github.com/Alminoris/AestheticSurfaces"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/aestheticsurfaces/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -29,7 +29,7 @@
 		"aestheticsurfaces.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.16.13",
+		"fabricloader": ">=0.17.2",
 		"minecraft": "~1.18.2",
 		"java": ">=17",
 		"fabric-api": "*"
