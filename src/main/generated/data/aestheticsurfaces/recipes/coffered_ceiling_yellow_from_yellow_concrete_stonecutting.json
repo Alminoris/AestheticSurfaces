@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:yellow_concrete"
+  },
+  "result": "aestheticsurfaces:coffered_ceiling_yellow",
+  "count": 2
+}

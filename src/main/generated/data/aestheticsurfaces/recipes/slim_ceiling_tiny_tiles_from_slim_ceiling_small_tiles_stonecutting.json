@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "aestheticsurfaces:slim_ceiling_small_tiles"
+  },
+  "result": "aestheticsurfaces:slim_ceiling_tiny_tiles",
+  "count": 1
+}

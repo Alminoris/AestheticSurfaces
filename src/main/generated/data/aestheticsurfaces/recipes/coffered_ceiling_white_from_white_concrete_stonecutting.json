@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:white_concrete"
+  },
+  "result": "aestheticsurfaces:coffered_ceiling_white",
+  "count": 2
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:pink_concrete"
+  },
+  "result": "aestheticsurfaces:coffered_ceiling_pink",
+  "count": 2
+}

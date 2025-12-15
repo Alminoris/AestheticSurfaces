@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:warped_planks"
+  },
+  "result": "aestheticsurfaces:herringbone_parquet_warped",
+  "count": 3
+}

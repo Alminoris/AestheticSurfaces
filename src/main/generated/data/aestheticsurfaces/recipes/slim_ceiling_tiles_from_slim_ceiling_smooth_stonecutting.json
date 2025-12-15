@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "aestheticsurfaces:slim_ceiling_smooth"
+  },
+  "result": "aestheticsurfaces:slim_ceiling_tiles",
+  "count": 1
+}

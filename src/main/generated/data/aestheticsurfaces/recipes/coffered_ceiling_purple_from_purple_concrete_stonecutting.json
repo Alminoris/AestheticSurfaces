@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:purple_concrete"
+  },
+  "result": "aestheticsurfaces:coffered_ceiling_purple",
+  "count": 2
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:spruce_planks"
+  },
+  "result": "aestheticsurfaces:arenberg_parquet_spruce",
+  "count": 3
+}

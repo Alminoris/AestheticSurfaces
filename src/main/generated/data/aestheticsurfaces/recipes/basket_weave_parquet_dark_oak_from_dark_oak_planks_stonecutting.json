@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:dark_oak_planks"
+  },
+  "result": "aestheticsurfaces:basket_weave_parquet_dark_oak",
+  "count": 3
+}
